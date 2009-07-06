@@ -22,9 +22,6 @@
 
 require 'pp'
 
-links = ['workingpoint.com','pbworks.com']
-host = 'workingpoint.com'
-
 #TODO: make this into a gem!
 def seconds_to_english(seconds)
   time = [
