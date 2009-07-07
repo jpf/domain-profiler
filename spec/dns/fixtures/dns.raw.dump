@@ -1,0 +1,77 @@
+
+; <<>> DiG 9.4.3-P1 <<>> @4.2.2.2 ns zombo.com
+; (1 server found)
+;; global options:  printcmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 28712
+;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;zombo.com.			IN	NS
+
+;; ANSWER SECTION:
+zombo.com.		39363	IN	NS	ns2.zombo.com.
+zombo.com.		39363	IN	NS	ns1.zombo.com.
+
+;; Query time: 12 msec
+;; SERVER: 4.2.2.2#53(4.2.2.2)
+;; WHEN: Mon Jul  6 23:22:38 2009
+;; MSG SIZE  rcvd: 63
+
+
+; <<>> DiG 9.4.3-P1 <<>> @4.2.2.2 a zombo.com
+; (1 server found)
+;; global options:  printcmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 2940
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;zombo.com.			IN	A
+
+;; ANSWER SECTION:
+zombo.com.		10563	IN	A	69.16.230.117
+
+;; Query time: 11 msec
+;; SERVER: 4.2.2.2#53(4.2.2.2)
+;; WHEN: Mon Jul  6 23:22:38 2009
+;; MSG SIZE  rcvd: 43
+
+
+; <<>> DiG 9.4.3-P1 <<>> @4.2.2.2 mx zombo.com
+; (1 server found)
+;; global options:  printcmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 28675
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;zombo.com.			IN	MX
+
+;; ANSWER SECTION:
+zombo.com.		14400	IN	MX	0 zombo.com.
+
+;; Query time: 75 msec
+;; SERVER: 4.2.2.2#53(4.2.2.2)
+;; WHEN: Mon Jul  6 23:22:39 2009
+;; MSG SIZE  rcvd: 43
+
+
+; <<>> DiG 9.4.3-P1 <<>> @4.2.2.2 txt zombo.com
+; (1 server found)
+;; global options:  printcmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 55106
+;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;zombo.com.			IN	TXT
+
+;; AUTHORITY SECTION:
+zombo.com.		900	IN	SOA	ns1.zombo.com. ooaahh.yahoo.com. 2008111600 86400 7200 3600000 86400
+
+;; Query time: 73 msec
+;; SERVER: 4.2.2.2#53(4.2.2.2)
+;; WHEN: Mon Jul  6 23:22:39 2009
+;; MSG SIZE  rcvd: 80
+

@@ -1,0 +1,25 @@
+# paid for:
+#  x registrar
+#  x hosting
+#  x dns hosting
+#  x email hosting
+#  x ssl certificate
+#
+# made decision:
+#  - [dns ] outsourced email?
+#  x [dns ] spf?
+#  x [dns ] ttl's on DNS?
+#  - [ssl ] ssl expires
+#  - [whoi] domain expires
+#  - [as  ] different ASes
+#  - [as  ] multi-homing dns?
+#  - [as  ] all services in same as?
+#  - [curl] valid xhtml?
+#  - [curl] frontend type
+#  - [nmap] port scan
+#  - [dns+] check for *.records
+
+Sources:
+ - dns
+ - whois
+ - ssl
