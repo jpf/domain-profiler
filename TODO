@@ -1,9 +1,9 @@
 # paid for:
-#  x registrar
-#  x hosting
-#  x dns hosting
-#  x email hosting
-#  x ssl certificate
+#  x whois.registrar
+#  x dns.a (owner)
+#  x dns.ns (owner)
+#  x dns.mx (owner)
+#  x ssl.issuer
 #
 # made decision:
 #  - [dns ] outsourced email?

@@ -4,6 +4,10 @@ class SSL
     @data = data.split("\n")
   end
   def ca
-    @data.grep(/^ 1 s:/).to_s.match(/O=([^\/]+)\/[A-Z]/)[1]
+    begin
+      @data.grep(/^issuer=/).to_s.match(/O=([^\/]+)\/[A-Z]/)[1]
+    rescue
+      'Unknown'
+    end
   end
 end

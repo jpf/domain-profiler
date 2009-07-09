@@ -10,28 +10,64 @@ describe DNS do
     @dns.parse(data)
   end
 
-  it "knows what the 'answer' is for the SOA record" do
-    @dns.soa.answer.should == ["ns1.zombo.com. ooaahh.yahoo.com. 2008111600 86400 7200 3600000 86400"]
-  end
-
   it "knows what the 'answer' is for the NS record" do
-    @dns.ns.answer.should == ["ns1.zombo.com.", "ns2.zombo.com."]
+    @dns.ns[0].answer.should == 'ns1.google.com.'
   end
 
   it "knows what the 'answer' is for the MX record" do
-    @dns.mx.answer.should == ['0 zombo.com.']
+    @dns.mx[0].answer.should == '10 smtp1.google.com.'
+  end
+
+  it "knows what the host part of the MX record is" do
+    @dns.mx[0].host.should == 'smtp1.google.com.'
+  end
+
+  it "knows what the priority is for the MX record" do
+    @dns.mx[0].priority.should == '10'
   end
 
   it "knows what the 'answer' is for the A record" do
-    @dns.a.answer.should == ['69.16.230.117']
+    @dns.a[0].answer.should == '74.125.127.100'
   end
 
   it "knows what the TTL is for the A record" do
-    @dns.a.ttl.should == ['10563']
+    @dns.a[0].ttl.should == '132'
   end
 
   it "knows what the query was for the A record" do
-    @dns.a.query.should == ['zombo.com.']
+    @dns.a[0].query.should == 'google.com.'
+  end
+
+  it "DNSType is able to deal with empty input" do
+    empty = DNSType.new('')
+    empty.ttl.should == ''
+  end
+
+  it "DNSType is able to deal with nil input" do
+    empty = DNSType.new(nil)
+    empty.ttl.should == ''
+  end
+
+  it "DNSQuery is able to deal with empty input" do
+    empty = DNSQuery.new('')
+    empty.a.should.is_a?(DNSType) == true
+  end
+
+  it "DNSQuery is able to deal with nil input" do
+    empty = DNSQuery.new(nil)
+    empty.a.should.is_a?(DNSType) == true
+  end
+
+  it " is able to deal with empty input" do
+    empty = DNS.new
+    empty.parse('')
+    empty.a[0].ttl.should == ''
+  end
+
+  it "is able to deal with nil input" do
+    empty = DNS.new
+    empty.parse(nil)
+    empty.a[0].ttl.should == ''
   end
 
 end

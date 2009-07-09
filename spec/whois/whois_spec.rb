@@ -12,4 +12,21 @@ describe Whois do
     whois.registrar.should == 'NETWORK SOLUTIONS, LLC.'
   end
 
+  it "is able to deal with no data" do
+    whois = Whois.new
+    whois.registrar.should == 'Unknown'
+  end
+
+  it "is able to deal with nil input" do
+    whois = Whois.new
+    whois.parse(nil)
+    whois.registrar.should == 'Unknown'
+  end
+
+  it "is able to deal with empty string input" do
+    whois = Whois.new
+    whois.parse('')
+    whois.registrar.should == 'Unknown'
+  end
+
 end
