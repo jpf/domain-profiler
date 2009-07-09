@@ -1,0 +1,58 @@
+depth=0 /C=US/ST=California/L=Mountain View/O=Google Inc/CN=*.google.com
+verify error:num=20:unable to get local issuer certificate
+verify return:1
+depth=0 /C=US/ST=California/L=Mountain View/O=Google Inc/CN=*.google.com
+verify error:num=27:certificate not trusted
+verify return:1
+depth=0 /C=US/ST=California/L=Mountain View/O=Google Inc/CN=*.google.com
+verify error:num=21:unable to verify the first certificate
+verify return:1
+CONNECTED(00000003)
+---
+Certificate chain
+ 0 s:/C=US/ST=California/L=Mountain View/O=Google Inc/CN=*.google.com
+   i:/C=ZA/ST=Western Cape/L=Cape Town/O=Thawte Consulting cc/OU=Certification Services Division/CN=Thawte Premium Server CA/emailAddress=premium-server@thawte.com
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIIDhjCCAu+gAwIBAgIQArJauA/0ymYP1R7n2/5RhTANBgkqhkiG9w0BAQUFADCB
+zjELMAkGA1UEBhMCWkExFTATBgNVBAgTDFdlc3Rlcm4gQ2FwZTESMBAGA1UEBxMJ
+Q2FwZSBUb3duMR0wGwYDVQQKExRUaGF3dGUgQ29uc3VsdGluZyBjYzEoMCYGA1UE
+CxMfQ2VydGlmaWNhdGlvbiBTZXJ2aWNlcyBEaXZpc2lvbjEhMB8GA1UEAxMYVGhh
+d3RlIFByZW1pdW0gU2VydmVyIENBMSgwJgYJKoZIhvcNAQkBFhlwcmVtaXVtLXNl
+cnZlckB0aGF3dGUuY29tMB4XDTA4MDMwNzE3NDU1MVoXDTEwMDQwMzIwMDUzOVow
+ZjELMAkGA1UEBhMCVVMxEzARBgNVBAgTCkNhbGlmb3JuaWExFjAUBgNVBAcTDU1v
+dW50YWluIFZpZXcxEzARBgNVBAoTCkdvb2dsZSBJbmMxFTATBgNVBAMMDCouZ29v
+Z2xlLmNvbTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAwMCKHa65sFesTGX8
+ngyOcogcgkeWC/cKl27IWJpSibl7eSxb8i7gX4Y50K04CU9y+CfDGr8W2mDTi7Lr
+K6BNgyH7IcHG6rA5YOUKAuQ4Q4euRaoVurWoy4fFJvA8v+sHAMLrvgrHK/bvhTZt
+kV8Exts9wqLvz/lKzMMOXOpOl7ECAwEAAaOByzCByDAdBgNVHSUEFjAUBggrBgEF
+BQcDAQYIKwYBBQUHAwIwQAYDVR0fBDkwNzA1oDOgMYYvaHR0cDovL2NybC50aGF3
+dGUuY29tL1RoYXd0ZVByZW1pdW1TZXJ2ZXJDQS5jcmwwMgYIKwYBBQUHAQEEJjAk
+MCIGCCsGAQUFBzABhhZodHRwOi8vb2NzcC50aGF3dGUuY29tMCMGA1UdEQQcMBqC
+Cmdvb2dsZS5jb22CDCouZ29vZ2xlLmNvbTAMBgNVHRMBAf8EAjAAMA0GCSqGSIb3
+DQEBBQUAA4GBAJ5/HsuMsz4n9WtgZA3Dxh5gNfxFBibN3jMO73EUbMi96puRs5uL
+vqed/46imiabc5K33JIH2jTeY223rDy3faNoycZ3xFIVDeG4bTfBvxVCT8bUWZZh
+WVECHGjcrgUOSSX/zgQuE07Olxth5IkMfKWVFAHyRrw8owSvEbt036ZB
+-----END CERTIFICATE-----
+subject=/C=US/ST=California/L=Mountain View/O=Google Inc/CN=*.google.com
+issuer=/C=ZA/ST=Western Cape/L=Cape Town/O=Thawte Consulting cc/OU=Certification Services Division/CN=Thawte Premium Server CA/emailAddress=premium-server@thawte.com
+---
+No client certificate CA names sent
+---
+SSL handshake has read 1056 bytes and written 304 bytes
+---
+New, TLSv1/SSLv3, Cipher is RC4-SHA
+Server public key is 1024 bit
+SSL-Session:
+    Protocol  : TLSv1
+    Cipher    : RC4-SHA
+    Session-ID: CC33BAF5EC92D4067EAFEE77279E346B97FBCF66F8E376CC2F23674A6FF3A4E3
+    Session-ID-ctx: 
+    Master-Key: A681DF66EA72BB098A9BB2FFF8B3CA24EACF038FE314D1D68C7AE85593D46F6FFE9BFBAA10C2878EE109DCBAFF73927D
+    Key-Arg   : None
+    Start Time: 1247029835
+    Timeout   : 300 (sec)
+    Verify return code: 21 (unable to verify the first certificate)
+---
+DONE

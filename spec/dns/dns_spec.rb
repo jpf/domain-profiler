@@ -10,6 +10,10 @@ describe DNS do
     @dns.parse(data)
   end
 
+  it "can return an SPF record" do
+    @dns.spf[0].should == 'v=spf1 include:_netblocks.google.com ~all'
+  end
+
   it "knows what the 'answer' is for the NS record" do
     @dns.ns[0].answer.should == 'ns1.google.com.'
   end

@@ -35,14 +35,13 @@ class DNSQuery
 
   end
   def spf
-    rv = @query.map{|record|
-      record if record[:type] == 'TXT'
+    @query.map{|record|
+      next unless record[:type] == 'TXT'
+      txt = DNSType.new(record).answer.gsub('"','')
+      next unless txt.match(/^v=spf/)
+      txt
     }.compact
-    if rv.empty?
-      [DNSType.new(nil)]
-    else
-      rv.map { |record| DNSType.new(record) }
-    end
+
   end
   def method_missing(type)
     rv = @query.sort{|a,b| a[:answer] <=> b[:answer]}.map { |record| 
