@@ -44,12 +44,12 @@ describe DNS do
 
   it "DNSType is able to deal with empty input" do
     empty = DNSType.new('')
-    empty.ttl.should == ''
+    empty.ttl.should == 'none'
   end
 
   it "DNSType is able to deal with nil input" do
     empty = DNSType.new(nil)
-    empty.ttl.should == ''
+    empty.ttl.should == 'none'
   end
 
   it "DNSQuery is able to deal with empty input" do
@@ -65,13 +65,22 @@ describe DNS do
   it " is able to deal with empty input" do
     empty = DNS.new
     empty.parse('')
-    empty.a[0].ttl.should == ''
+    empty.a[0].ttl.should == 'none'
   end
 
   it "is able to deal with nil input" do
     empty = DNS.new
     empty.parse(nil)
-    empty.a[0].ttl.should == ''
+    empty.a[0].ttl.should == 'none'
   end
+
+  it "is able to deal with missing host information" do
+    filename = File.expand_path(File.dirname(__FILE__) + '/fixtures/furbo.org.raw.dump')
+    data = `cat #{filename}`
+    @dns = DNS.new
+    @dns.parse(data)
+    @dns.mx[0].host.should == 'none'
+  end
+    
 
 end

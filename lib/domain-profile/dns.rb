@@ -3,21 +3,23 @@ class DNSType
   def initialize(input)
     @input = input
   end
+  def mx_value(n)
+    return 'none' unless (defined? @input[:type]) and @input[:type] == 'MX'
+    @input[:answer].split(' ')[n]
+  end
   # Helper for the :mx method
   def priority
-    return '' unless @input[:type] == 'MX'
-    @input[:answer].split(' ')[0]
+    mx_value(0)
   end
   # Helper for the :mx method
   def host
-    return '' unless @input[:type] == 'MX'
-    @input[:answer].split(' ')[1]
+    mx_value(1)
   end
   def method_missing(type)
     begin 
-      @input[type] ||= ''
+      @input[type] ||= 'none'
     rescue
-      ''
+      'none'
     end
   end
 end
@@ -27,7 +29,8 @@ class DNSQuery
     @lookup = [:query,:ttl,:cl,:type,:answer]
     begin
       @query = input.grep(/^[^;]/).map do |line|
-        Hash[*@lookup.zip(line.gsub("\t\t","\t").split("\t")).flatten]
+        rv = Hash[*@lookup.zip(line.gsub("\t\t","\t").split("\t")).flatten]
+        rv.each_pair{|k,v| rv[k] = '' unless rv[k]}
       end
     rescue
       @query = Hash[]

@@ -1,25 +1,33 @@
+Shorten whois, ssl and email output
+Determine if there is no SSL certificate or of there is a parsing error
+Determine if there is a whois error, or if it's a parsing error
+
 # paid for:
-#  x whois.registrar
-#  x dns.a (owner)
-#  x dns.ns (owner)
-#  x dns.mx (owner)
-#  x ssl.issuer
+#  - whois.registrar
+#  - dns.a (owner)
+#  - dns.ns (owner)
+#  - dns.mx (owner)
+#  - ssl.issuer
 #
 # made decision:
 #  - [dns ] outsourced email?
-#  x [dns ] spf?
-#  x [dns ] ttl's on DNS?
+#  - [dns ] spf?
+#  - [dns ] ttl's on DNS?
+#  - [dns ] dns duration
 #  - [ssl ] ssl expires
+#  - [ssl ] ssl duration
 #  - [whoi] domain expires
 #  - [as  ] different ASes
 #  - [as  ] multi-homing dns?
 #  - [as  ] all services in same as?
 #  - [curl] valid xhtml?
 #  - [curl] frontend type
-#  - [nmap] port scan
+#  - [nmap] port scan (is port 22 open?)
 #  - [dns+] check for *.records
-
-Sources:
- - dns
- - whois
- - ssl
+#  - Mailhost
+#  - DNS host
+# 
+# Sources:
+#  - dns
+#  - whois
+#  - ssl
