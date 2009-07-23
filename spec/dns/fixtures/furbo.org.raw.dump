@@ -1,0 +1,65 @@
+; <<>> DiG 9.4.3-P1 <<>> @4.2.2.2 ns furbo.org
+; (1 server found)
+;; global options:  printcmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 34784
+;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 0
+;; QUESTION SECTION:
+;furbo.org.
+;; ANSWER SECTION:
+furbo.org.
+3600
+ns03.domaincontrol.com.
+furbo.org.
+3600
+ns04.domaincontrol.com.
+;; Query time: 115 msec
+;; SERVER: 4.2.2.2#53(4.2.2.2)
+;; WHEN: Fri Jul 10 14:52:56 2009
+;; MSG SIZE  rcvd: 82
+; <<>> DiG 9.4.3-P1 <<>> @4.2.2.2 a furbo.org
+; (1 server found)
+;; global options:  printcmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 36711
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+;; QUESTION SECTION:
+;furbo.org.
+;; ANSWER SECTION:
+furbo.org.
+3600
+38.103.165.12
+;; Query time: 36 msec
+;; SERVER: 4.2.2.2#53(4.2.2.2)
+;; WHEN: Fri Jul 10 14:52:56 2009
+;; MSG SIZE  rcvd: 43
+; <<>> DiG 9.4.3-P1 <<>> @4.2.2.2 mx furbo.org
+; (1 server found)
+;; global options:  printcmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 35991
+;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 0
+;; QUESTION SECTION:
+;furbo.org.
+;; AUTHORITY SECTION:
+furbo.org.
+ns03.domaincontrol.com. dns.jomax.net. 2007101000 28800 7200 604800 86400
+;; Query time: 34 msec
+;; SERVER: 4.2.2.2#53(4.2.2.2)
+;; WHEN: Fri Jul 10 14:52:57 2009
+;; MSG SIZE  rcvd: 98
+; <<>> DiG 9.4.3-P1 <<>> @4.2.2.2 txt furbo.org
+; (1 server found)
+;; global options:  printcmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 40542
+;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 0
+;; QUESTION SECTION:
+;furbo.org.
+;; AUTHORITY SECTION:
+furbo.org.
+ns03.domaincontrol.com. dns.jomax.net. 2007101000 28800 7200 604800 86400
+;; Query time: 33 msec
+;; SERVER: 4.2.2.2#53(4.2.2.2)
+;; WHEN: Fri Jul 10 14:52:57 2009
+;; MSG SIZE  rcvd: 98

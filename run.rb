@@ -2,33 +2,11 @@
 $LOAD_PATH.unshift File.expand_path(File.dirname(__FILE__) + '/lib')
 
 require 'pp'
-require 'domain-profile/dns'
-require 'domain-profile/whois'
-require 'domain-profile/ssl'
-require 'domain-profile/hostname'
-require 'domain-profile/information'
-
-#TODO: Abstract this.
-def seconds_to_english(seconds)
-#  return seconds unless seconds.to_i.is_a? Integer
-  time = [[:year,31556926], [:month,2629743], [:week,604800], [:day,86400], [:hour,3600], [:minute,60], [:second,1]]
-  seconds = seconds.to_i
-  out = []
-  time.each { |period,length|
-    count = seconds / length
-    if count > 0
-      seconds -= count * length
-
-      string = "#{count} #{period.to_s}"
-      string << 's' if count > 1
-      out.push(string)
-    end
-  }
-  out.join(', ')
-end
+require 'domain-profile'
 
 def org(uri)
-  `./geoiplookup -f GeoIPOrg.dat #{uri}`.gsub("\n",'').split(': ')[1]
+  ip = IPInfo.new(uri)
+  ip.description
 end
 
 host = ARGV[0]
@@ -43,7 +21,7 @@ ssl.parse(data[:ssl])
 
 class Array
   def lookup(host)
-    self.map{|name| Hostname.new.simplify(name,host) }.uniq.sort
+    self.map{|name| Hostname.new.simplify(name,host) }.uniq
   end
 end
 

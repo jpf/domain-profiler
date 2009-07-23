@@ -1,14 +1,19 @@
-Shorten whois, ssl and email output
+Need better detection of webhost!
+We should be able to tell the difference between EC2 hosts and normal amazon hosts
+SSL detection should return :none if there isn't something listening on 443 or no cert was returned.
 Determine if there is no SSL certificate or of there is a parsing error
+Why does DNS detection return :none sometimes? WTF
 Determine if there is a whois error, or if it's a parsing error
 
-# paid for:
-#  - whois.registrar
-#  - dns.a (owner)
-#  - dns.ns (owner)
-#  - dns.mx (owner)
-#  - ssl.issuer
-#
+
+Decisions that cost money:
+  - Registrar
+  - Web host
+  - DNS host
+  - Mail host
+  - SSL Issuer
+  - SSL Certificate type
+
 # made decision:
 #  - [dns ] outsourced email?
 #  - [dns ] spf?
@@ -24,10 +29,3 @@ Determine if there is a whois error, or if it's a parsing error
 #  - [curl] frontend type
 #  - [nmap] port scan (is port 22 open?)
 #  - [dns+] check for *.records
-#  - Mailhost
-#  - DNS host
-# 
-# Sources:
-#  - dns
-#  - whois
-#  - ssl

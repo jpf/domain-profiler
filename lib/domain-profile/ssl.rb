@@ -1,6 +1,12 @@
 require 'open3'
+# connect: Operation timed out
+# connect: Connection refused
+# connect:errno=61
 
 class SSL
+  def initialize
+    @no_data = true
+  end
   def parse(input)
     @data = {}
     output = []
@@ -12,34 +18,23 @@ class SSL
     output.each { |line| 
       (k,v) = line.gsub("\n", '').split(/=/,2).to_a.flatten
       @data[k] = v
+      @no_data = false
     }
   end
   def cn
-    begin
-      @data['subject'].match(/CN=([^\/]+)/)[1]
-    rescue
-      'Unknown'
-    end
+    return :none if @no_data
+    @data['subject'].match(/CN=([^\/]+)/)[1]
   end
   def ca
-    begin
-      @data['issuer'].match(/O=([^\/]+)\/[A-Z]/)[1].to_a
-    rescue
-      'Unknown'.to_a
-    end
+    return [:none] if @no_data
+    @data['issuer'].match(/O=([^\/]+)\/[A-Z]/)[1].to_a
   end
   def created
-    begin
-      @data['notBefore'] ||= 'Unknown'
-    rescue
-      'Unknown'
-    end
+    return :none if @no_data
+    @data['notBefore'] ||= 'Unknown'
   end
   def expires
-    begin
-      @data['notAfter'] ||= 'Unknown'
-    rescue
-      'Unknown'
-    end
+    return :none if @no_data
+    @data['notAfter'] ||= 'Unknown'
   end
 end

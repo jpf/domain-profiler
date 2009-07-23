@@ -36,15 +36,15 @@ describe SSL do
 
   it "is able to deal with no data" do
     empty = SSL.new
-    empty.ca.should == ['Unknown']
-    empty.expires.should == 'Unknown'
+    empty.ca.should == [:none]
+    empty.expires.should == :none
   end
 
   it "is able to deal with an empty string as input" do
     empty = SSL.new
     empty.parse('')
-    empty.ca.should == ['Unknown']
-    empty.expires.should == 'Unknown'
+    empty.ca.should == [:none]
+    empty.expires.should == :none
   end
 
 end
