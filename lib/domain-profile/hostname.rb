@@ -23,17 +23,17 @@ class Hostname
     :markmonitor => ['markmonitor inc.'],
     :microsoft => ['msft.net'],
     :netsol => ['network solutions, llc.'], # Network Solutions
-    #FIXME: This mainly covers the DNS class'es asses
+    #FIXME: This cleans up after the DNS class
     :none => ['none'],
     :oneandone => ['1 & 1 internet ag','1and1.com'],
     :pair => ['pair networks', 'pair.com'],
     :postini => ['psmtp.com'],
-    :rackspace => ['rackspace.com'],
+    :rackspace => ['rackspace.com','rackspace.com, ltd.'],
     :serverbeach => ['serverbeach'],
     :slicehost => ['slicehost llc', 'slicehost.net'],
     :softlayer => ['softlayer corporate c', 'softlayer technologies inc.', 'softlayer technologies', 'softlayer.com'],
     :thawte => ['thawte consulting cc','thawte consulting (pty) ltd.'],
-    :theplanet => ['theplanet.com internet services'],
+    :theplanet => ['theplanet.com internet services','theplanet.com internet services, inc.'],
     :tucows => ['tucows inc.'],
     :ultradns => ['ultradns.info', 'ultradns.net', 'ultradns.org','ultradns.co.uk'],
     :verisign => ['verisign trust network', 'verisign, inc.'],

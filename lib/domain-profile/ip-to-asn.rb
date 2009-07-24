@@ -14,6 +14,12 @@ class ASN
     rv = `dig +short AS#{asn}.asn.cymru.com TXT`
     @asn, @country_code, @registry, @allocation_date, @description = rv.chomp.gsub('"','').split(' | ')
   end
+  def netname
+    @description.match(/([^ ]+)/)[0]
+  end
+  def orgname
+    @description.match(/.*? (- )?(.*)/)[2]
+  end
   attr_reader :asn, :country_code, :registry, :allocation_date, :description
 end
 
