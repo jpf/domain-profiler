@@ -5,8 +5,8 @@ require 'pp'
 require 'domain-profile'
 
 def org(uri)
-  ip = IPInfo.new(uri)
-  ip.description
+  ip = IPtoASN.new(uri)
+  ip.asn.description
 end
 
 host = ARGV[0]

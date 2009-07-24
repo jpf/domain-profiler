@@ -5,6 +5,8 @@ Determine if there is no SSL certificate or of there is a parsing error
 Why does DNS detection return :none sometimes? WTF
 Determine if there is a whois error, or if it's a parsing error
 
+SSL detection should have a 3-6 second timeout.
+
 
 Decisions that cost money:
   - Registrar
