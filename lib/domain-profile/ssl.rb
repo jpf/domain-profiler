@@ -27,7 +27,12 @@ class SSL
   end
   def ca
     return [:none] if @no_data
-    @data['issuer'].match(/O=([^\/]+)\/[A-Z]/)[1].to_a
+    return [:none] unless @data.is_a? Hash
+    begin
+      @data['issuer'].match(/O=([^\/]+)\/[A-Z]/)[1].to_a
+    rescue
+      [:none]
+    end
   end
   def created
     return :none if @no_data

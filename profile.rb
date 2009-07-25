@@ -108,13 +108,3 @@ end
 
 charts = output
 puts ERB.new(File.read("view/html")).result
-
-
-
-
-
-
-
-
-
-

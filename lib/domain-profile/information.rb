@@ -22,7 +22,7 @@ class Information
       data[:dns] = `server=4.2.2.2; host=#{host}; dig @$server ns $host; dig @$server a $host; dig @$server mx $host; dig @$server txt $host`
 
       status 'Whois '
-      data[:whois] = `sleep 5; whois 'domain #{host}'`
+      data[:whois] = `sleep 0; whois 'domain #{host}'`
 
       status 'SSL'
       data[:ssl] = `echo '' | openssl s_client -connect #{host}:443 2>&1`

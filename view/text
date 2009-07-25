@@ -1,0 +1,17 @@
+==========[ <%= profile.hostname %> ]==========
+  Web Hosting:<% profile.dns.a.each do |record| %>
+    <%= "#{record.answer} (#{ IPtoASN.new(record.answer).asn.orgname
+  })" %><% end %>
+
+  DNS Hosting:<% profile.dns.ns.each do |record| %>
+    <%= record.answer %><% end %>
+
+  Email Hosting:<% profile.dns.mx.each do |record| %>
+    <%= record.answer %><% end %>
+
+  Domain Registrar:
+    <%= profile.whois.registrar %>
+
+  SSL Issuer:
+    <%= profile.ssl.ca %> (<%= profile.ssl.cn %>)
+

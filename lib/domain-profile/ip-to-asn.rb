@@ -18,6 +18,7 @@ class ASN
     @description.match(/([^ ]+)/)[0]
   end
   def orgname
+    return '' unless @description.is_a? String
     @description.match(/.*? (- )?(.*)/)[2]
   end
   attr_reader :asn, :country_code, :registry, :allocation_date, :description
