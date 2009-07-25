@@ -1,7 +1,7 @@
 require 'domain-profiler/dns'
 require 'domain-profiler/whois'
 require 'domain-profiler/ssl'
-require 'domain-profiler/hostname'
+require 'domain-profiler/name'
 require 'domain-profiler/information'
 require 'domain-profiler/ip-to-asn'
 
