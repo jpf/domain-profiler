@@ -4,9 +4,9 @@ $LOAD_PATH.unshift File.expand_path(File.dirname(__FILE__) + '/lib')
 require 'pp'
 require 'domain-profile'
 
-def org(uri)
-  ip = IPInfo.new(uri)
-  ip.description
+def orgname(ip)
+  ip = IPtoASN.new(ip)
+  ip.asn.orgname
 end
 
 host = ARGV[0]
@@ -28,7 +28,7 @@ end
 print "-\n"
 print " host=#{host}\n"
 print "serve="
-pp dns.a.map{|record| org(record.answer) }.lookup(host)
+pp dns.a.map{|record| orgname(record.answer) }.lookup(host)
 print "  dns="
 pp dns.ns.map{|record| Hostname.new.shorten(record.answer) }.lookup(host)
 print " mail="
