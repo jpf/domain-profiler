@@ -15,11 +15,7 @@ More complete spec tests.
 
 Add RDoc
 
-Add README for github
-
 Examples folder?
-
-Add MIT license to all files
 
 If it makes sense to make a gem, use Jeweler
 
