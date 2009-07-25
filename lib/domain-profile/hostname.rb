@@ -15,7 +15,7 @@ class Name
       :google => { :name => 'Google, Inc.', :dba => ['aspmx.l.google.com', 'google.com', 'googlemail.com', 'l.google.com','google'] },
       :markmonitor => { :name => 'MarkMonitor, Inc.', :dba => ['markmonitor inc.'] },
       :microsoft => { :name => 'Microsoft Corporation', :dba => ['msft.net'] },
-      :netsol => { :name => 'Network Solutions, LLC', :dba => ['network solutions, llc.'] }, # Network Solutions
+      :netsol => { :name => 'Network Solutions, LLC', :dba => ['network solutions, llc.','network solutions llc'] }, # Network Solutions
       :none => { :name => 'none', :dba => ['none'] }, #FIXME: This cleans up after the DNS class
       :oneandone => { :name => '1 & 1 Internet, Inc.', :dba => ['1 & 1 internet ag','1and1.com'] },
       :pair => { :name => 'pair Networks, Inc.', :dba => ['pair networks', 'pair.com'] },

@@ -38,16 +38,7 @@ file.map {|host|
   out[:mail_host]  = profile.dns.mx.map{|record| Name.new.shorten(record.host) }.lookup(host)
   out[:registrar]  = profile.whois.registrar.lookup(host)
   out[:ssl_issuer] = profile.ssl.ca.lookup(host)
-  
-  if profile.ssl.cn.is_a? Symbol
-    ssl_type = profile.ssl.cn
-  elsif profile.ssl.cn.match(/^\*/)
-    ssl_type = :star
-  else
-    ssl_type = :host
-  end
-  out[:ssl_type] = [ssl_type]
-
+  out[:ssl_type]   = [profile.ssl.cn]
   hosts[host] = out
 }
 
@@ -61,7 +52,18 @@ types.each { |kind| count[kind] = [] }
 # Turn the list of host data into a hash of type data
 hosts.each do |hostname,data|
   data.each do |kind,value|
-    count[kind].push(value)
+    count[kind].push(value) unless kind == :ssl_type
+
+    type = value[0]
+    if type.is_a? Symbol
+      ssl_type = type
+    elsif type.match(/^\*/)
+      ssl_type = :star
+    else
+      ssl_type = :normal
+    end
+    count[kind].push(ssl_type)
+
   end
 end
 
