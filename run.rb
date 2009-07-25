@@ -21,7 +21,7 @@ ssl.parse(data[:ssl])
 
 class Array
   def lookup(host)
-    self.map{|name| Hostname.new.simplify(name,host) }.uniq
+    self.map{|name| Name.new.simplify(name,host) }.uniq
   end
 end
 
@@ -30,9 +30,9 @@ print " host=#{host}\n"
 print "serve="
 pp dns.a.map{|record| orgname(record.answer) }.lookup(host)
 print "  dns="
-pp dns.ns.map{|record| Hostname.new.shorten(record.answer) }.lookup(host)
+pp dns.ns.map{|record| Name.new.shorten(record.answer) }.lookup(host)
 print " mail="
-pp dns.mx.map{|record| Hostname.new.shorten(record.host) }.lookup(host)
+pp dns.mx.map{|record| Name.new.shorten(record.host) }.lookup(host)
 print "whois="
 pp whois.registrar.lookup(host)
 print "  ssl="

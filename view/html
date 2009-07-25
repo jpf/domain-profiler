@@ -1,0 +1,28 @@
+<html>
+<body>
+<% charts.sort {|a,b| a.to_s <=> b.to_s }.each do |kind,url| %>
+<img src="<%= url %>"/>
+<% end %>
+
+<table border="1">
+  <tr>
+    <th>Domain</th>
+    <th>Web Host</th>
+    <th>Mail Host</th>
+    <th>DNS Host</th>
+    <th>Registrar</th>
+    <th>SSL Issuer</th>
+    <th>SSL Type</th>
+  </tr>
+  <% hosts.each do |domain,data| %>
+  <tr>
+    <td><%= domain %></td>
+    <% types.each do |type| %>
+    <td><%= data[type].map{|i| if i.is_a? String; "\"#{i}\"" ; else x = fullname(i); end}.join(', ') %></td>
+    <% end %>
+  </tr>
+  <% end %>
+</table>
+</body>
+</html>
+   

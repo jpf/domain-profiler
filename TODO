@@ -1,12 +1,33 @@
-Need better detection of webhost!
 We should be able to tell the difference between EC2 hosts and normal amazon hosts
+
 SSL detection should return :none if there isn't something listening on 443 or no cert was returned.
+
 Determine if there is no SSL certificate or of there is a parsing error
+
 Why does DNS detection return :none sometimes? WTF
+
 Determine if there is a whois error, or if it's a parsing error
 
 SSL detection should have a 3-6 second timeout.
 
+Rename all instances of domain-profile to domain-profiler
+
+Rename all instances of hostname.rb to name.rb
+
+More complete spec tests.
+  - Test caching of results if possible!
+
+Add RDoc
+
+Add README for github
+
+Examples folder?
+
+Add MIT license to all files
+
+If it makes sense to make a gem, use Jeweler
+
+==================================================
 
 Decisions that cost money:
   - Registrar
@@ -16,18 +37,16 @@ Decisions that cost money:
   - SSL Issuer
   - SSL Certificate type
 
-# made decision:
-#  - [dns ] outsourced email?
-#  - [dns ] spf?
-#  - [dns ] ttl's on DNS?
-#  - [dns ] dns duration
-#  - [ssl ] ssl expires
-#  - [ssl ] ssl duration
-#  - [whoi] domain expires
-#  - [as  ] different ASes
-#  - [as  ] multi-homing dns?
-#  - [as  ] all services in same as?
-#  - [curl] valid xhtml?
-#  - [curl] frontend type
-#  - [nmap] port scan (is port 22 open?)
-#  - [dns+] check for *.records
+Decisions that don't necessarily cost money:
+  - SPF records, and values thereof
+  - TTL on DNS records
+  - Expiration date for domain
+  - Expiration date for ssl certificate
+  - Is there more than one result for the A, MX, or NS records?
+    - If so, are they in different Autonomous Systems?
+  - Are all services (A, MX, NS) in the same AS?
+  - Does the main webpage have valid XHTML?
+  - What type of frontend?
+  - What type of mailserver?
+  - What type of DNS server?
+  - Is there a * record in DNS?
