@@ -1,9 +1,5 @@
 We should be able to tell the difference between EC2 hosts and normal amazon hosts
 
-SSL detection should return :none if there isn't something listening on 443 or no cert was returned.
-
-Determine if there is no SSL certificate or of there is a parsing error
-
 Why does DNS detection return :none sometimes? WTF
 
 Determine if there is a whois error, or if it's a parsing error

@@ -12,6 +12,6 @@
   Domain Registrar:
     <%= profile.whois.registrar %>
 
-  SSL Issuer:
-    <%= profile.ssl.ca %> (<%= profile.ssl.cn %>)
+  SSL Issuer:<% profile.dns.ssl.each do |record| %>
+    <%= record.ca %> (<%= record.cn %>)<% end %>
 

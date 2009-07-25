@@ -22,8 +22,8 @@ class SSL
     }
   end
   def cn
-    return :none if @no_data
-    @data['subject'].match(/CN=([^\/]+)/)[1]
+    return [:none] if @no_data
+    [@data['subject'].match(/CN=([^\/]+)/)[1]]
   end
   def ca
     return [:none] if @no_data
@@ -35,11 +35,11 @@ class SSL
     end
   end
   def created
-    return :none if @no_data
-    @data['notBefore'] ||= 'Unknown'
+    return [:none] if @no_data
+    [@data['notBefore'] ||= :unknown]
   end
   def expires
-    return :none if @no_data
-    @data['notAfter'] ||= 'Unknown'
+    return [:none] if @no_data
+    [@data['notAfter'] ||= :unknown]
   end
 end

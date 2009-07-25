@@ -38,7 +38,7 @@ file.map {|host|
   out[:mail_host]  = profile.dns.mx.map{|record| Name.new.shorten(record.host) }.lookup(host)
   out[:registrar]  = profile.whois.registrar.lookup(host)
   out[:ssl_issuer] = profile.ssl.ca.lookup(host)
-  out[:ssl_type]   = [profile.ssl.cn]
+  out[:ssl_type]   = profile.ssl.cn
   hosts[host] = out
 }
 
@@ -60,7 +60,7 @@ hosts.each do |hostname,data|
     elsif type.match(/^\*/)
       ssl_type = :star
     else
-      ssl_type = :normal
+      ssl_type = :monkey
     end
     count[kind].push(ssl_type)
 
