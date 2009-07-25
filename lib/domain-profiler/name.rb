@@ -15,8 +15,7 @@ class Name
       :google => { :name => 'Google, Inc.', :dba => ['aspmx.l.google.com', 'google.com', 'googlemail.com', 'l.google.com','google'] },
       :markmonitor => { :name => 'MarkMonitor, Inc.', :dba => ['markmonitor inc.'] },
       :microsoft => { :name => 'Microsoft Corporation', :dba => ['msft.net'] },
-      :netsol => { :name => 'Network Solutions, LLC', :dba => ['network solutions, llc.','network solutions llc'] }, # Network Solutions
-      :none => { :name => 'none', :dba => ['none'] }, #FIXME: This cleans up after the DNS class
+      :netsol => { :name => 'Network Solutions, LLC', :dba => ['network solutions, llc.','network solutions llc'] },
       :oneandone => { :name => '1 & 1 Internet, Inc.', :dba => ['1 & 1 internet ag','1and1.com'] },
       :pair => { :name => 'pair Networks, Inc.', :dba => ['pair networks', 'pair.com'] },
       :postini => { :name => 'Google, Inc. (Postini)', :dba => ['psmtp.com'] },
@@ -31,26 +30,26 @@ class Name
       :verisign => { :name => 'VeriSign', :dba => ['verisign trust network', 'verisign, inc.'] },
       :yahoo => { :name => 'Yahoo! Inc.', :dba => ['yahoo.com','inktomi corporation'] },
     }
+
+    @lookup = {}
+    @aliases.keys.each {|shortname|
+      @aliases[shortname][:dba].each {|dba|
+        @lookup[dba] = shortname
+      }
+    }
   end
   def shorten(input)
+    return input unless input.is_a? String
+    return input unless input.match('.')
     host = input.split('.')
     return "#{host[-2]}.#{host[-1]}" if host[-1].match(/(com|net|org)/)
     host.shift if host.size > 2
     host.join('.')
   end
   def simplify(input,match=nil)
-    return '' if (not defined? input) or input.nil?
     return input unless input.is_a? String
-    
-    lookup = {}
-    @aliases.keys.each {|shortname|
-      @aliases[shortname][:dba].each {|dba|
-        lookup[dba] = shortname
-      }
-    }
-
     return :self if (match and simplify(input) == simplify(match))
-    return lookup[input.downcase] if lookup[input.downcase]
+    return @lookup[input.downcase] if @lookup[input.downcase]
     return :self if (match and simplify(input).gsub(/\W/,'').downcase.include? match.split(/\./)[-2])
     input
   end

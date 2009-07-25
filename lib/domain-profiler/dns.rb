@@ -4,7 +4,7 @@ class DNSType
     @input = input
   end
   def mx_value(n)
-    return 'none' unless (defined? @input[:type]) and @input[:type] == 'MX'
+    return :none unless (defined? @input[:type]) and @input[:type] == 'MX'
     @input[:answer].split(' ')[n]
   end
   # Helper for the :mx method
@@ -17,9 +17,9 @@ class DNSType
   end
   def method_missing(type)
     begin 
-      @input[type] ||= 'none'
+      @input[type] ||= :none
     rescue
-      'none'
+      :none
     end
   end
 end
