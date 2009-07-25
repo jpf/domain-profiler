@@ -1,12 +1,12 @@
-require 'domain-profile/dns'
-require 'domain-profile/whois'
-require 'domain-profile/ssl'
-require 'domain-profile/hostname'
-require 'domain-profile/information'
-require 'domain-profile/ip-to-asn'
+require 'domain-profiler/dns'
+require 'domain-profiler/whois'
+require 'domain-profiler/ssl'
+require 'domain-profiler/hostname'
+require 'domain-profiler/information'
+require 'domain-profiler/ip-to-asn'
 
 
-class DomainProfile
+class DomainProfiler
   def initialize(host)
     @hostname = host
     data = Information.new(:debug => true).fetch(host)

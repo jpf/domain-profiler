@@ -10,8 +10,6 @@ Determine if there is a whois error, or if it's a parsing error
 
 SSL detection should have a 3-6 second timeout.
 
-Rename all instances of domain-profile to domain-profiler
-
 Rename all instances of hostname.rb to name.rb
 
 More complete spec tests.

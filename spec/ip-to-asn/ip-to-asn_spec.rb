@@ -1,6 +1,6 @@
 # encoding: UTF-8
 require File.expand_path(File.dirname(__FILE__) + '/../spec_helper.rb')
-require 'domain-profile/ip-to-asn'
+require 'domain-profiler/ip-to-asn'
 
 describe IPtoASN do
   before(:all) do

@@ -1,6 +1,6 @@
 # encoding: UTF-8
 require File.expand_path(File.dirname(__FILE__) + '/../spec_helper.rb')
-require 'domain-profile/ssl'
+require 'domain-profiler/ssl'
 
 describe SSL do
   before (:all) do

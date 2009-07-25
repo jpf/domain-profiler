@@ -2,7 +2,7 @@
 $LOAD_PATH.unshift File.expand_path(File.dirname(__FILE__) + '/lib')
 
 require 'pp'
-require 'domain-profile'
+require 'domain-profiler'
 require 'rubygems'
 require 'gchart'
 require 'erb'
@@ -30,7 +30,7 @@ hosts = {}
 
 file.map {|host|
   host.chomp!
-  profile = DomainProfile.new(host)
+  profile = DomainProfiler.new(host)
 
   out = {}
   out[:web_host]   = profile.dns.a.map{|record| orgname(record.answer) }.lookup(host)
