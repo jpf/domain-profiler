@@ -1,7 +1,6 @@
 ==========[ <%= profile.hostname %> ]==========
   Web Hosting:<% profile.dns.a.each do |record| %>
-    <%= "#{record.answer} (#{ IPtoASN.new(record.answer).asn.orgname
-  })" %><% end %>
+    <%= "#{record.answer} (#{ orgname(record.answer) })" %><% end %>
 
   DNS Hosting:<% profile.dns.ns.each do |record| %>
     <%= record.answer %><% end %>
