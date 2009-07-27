@@ -7,11 +7,6 @@ require 'rubygems'
 require 'gchart'
 require 'erb'
 
-def orgname(ip)
-  ip = IPtoASN.new(ip)
-  ip.asn.orgname
-end
-
 def fullname(name)
   Name.new.full(name)
 end
@@ -52,18 +47,17 @@ types.each { |kind| count[kind] = [] }
 # Turn the list of host data into a hash of type data
 hosts.each do |hostname,data|
   data.each do |kind,value|
-    count[kind].push(value) unless kind == :ssl_type
+    if kind === :ssl_type and not value[0].is_a? Symbol
+      if value[0].match(/^\*/)
+        ssl_type = :star
+      else
+        ssl_type = :normal
+      end
 
-    type = value[0]
-    if type.is_a? Symbol
-      ssl_type = type
-    elsif type.match(/^\*/)
-      ssl_type = :star
-    else
-      ssl_type = :monkey
+      value = ssl_type
     end
-    count[kind].push(ssl_type)
 
+    count[kind].push(value) 
   end
 end
 
@@ -101,11 +95,11 @@ output.each do |kind, summary_data|
   keys = []
   values = []
   summary_data.sort { |a,b| a[1] <=> b[1] }.each do |k,v|
-    keys.push(k.to_s)
+    keys.push(Name.new.full(k))
     values.push(v)
   end
 
-  output[kind] = Gchart.pie(:title => kind.to_s, :labels => keys, :data => values) 
+  output[kind] = Gchart.pie(:size => '400x200', :title => kind.to_s, :labels => keys, :data => values) 
 end
 
 charts = output
