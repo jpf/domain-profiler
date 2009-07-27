@@ -1,10 +1,13 @@
 <html>
+<head>
+<script src="public/sorttable.js"></script>
+</head>
 <body>
 <% charts.sort {|a,b| a.to_s <=> b.to_s }.each do |kind,url| %>
 <img src="<%= url %>"/>
 <% end %>
 
-<table border="1">
+<table class="sortable" border="1">
   <tr>
     <th>Domain</th>
     <th>Web Host</th>
