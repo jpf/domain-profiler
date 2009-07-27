@@ -8,6 +8,8 @@ SSL detection should have a 3-6 second timeout.
 
 More complete spec tests.
   - Test caching of results if possible!
+  - Write spec tests for ip-to-asn
+  - The DNS class could use some cleaning up.
 
 Add RDoc
 
