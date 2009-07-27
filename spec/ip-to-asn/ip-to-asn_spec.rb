@@ -1,10 +1,12 @@
 # encoding: UTF-8
 require File.expand_path(File.dirname(__FILE__) + '/../spec_helper.rb')
 require 'domain-profiler/ip-to-asn'
+require 'ipaddr'
 
 describe IPtoASN do
   before(:all) do
-    @ip = IPtoASN.new('4.2.2.2')
+    @use_cache = false
+    @ip = IPtoASN.new('4.2.2.2',@use_cache)
   end
 
   ## Peer
@@ -58,13 +60,12 @@ describe IPtoASN do
   end
 
   it "can properly parse different types of ASN descriptions into OrgNames and NetNames" do 
-    l3 = IPtoASN.new('4.2.2.2')
+    l3 = IPtoASN.new('4.2.2.2',@use_cache)
     l3.asn.orgname.should == 'Level 3 Communications'
     l3.asn.netname.should == 'LEVEL3'
-    amz = IPtoASN.new('75.101.163.44')
+    amz = IPtoASN.new('75.101.163.44',@use_cache)
     amz.asn.orgname.should == 'Amazon.com, Inc.'
     amz.asn.netname.should == 'AMAZON-AES'
-    
   end
 
 end

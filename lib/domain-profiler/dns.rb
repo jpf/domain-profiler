@@ -1,4 +1,3 @@
-
 class DNSType
   def initialize(input)
     @input = input
@@ -29,8 +28,8 @@ class DNSQuery
     @lookup = [:query,:ttl,:cl,:type,:answer]
     begin
       @query = input.grep(/^[^;]/).map do |line|
-        rv = Hash[*@lookup.zip(line.gsub("\t\t","\t").split("\t")).flatten]
-        rv.each_pair{|k,v| rv[k] = '' unless rv[k]}
+        tokenized = line.gsub(/\t+/,"\t").split("\t")
+        Hash[*@lookup.zip(tokenized).flatten]
       end
     rescue
       @query = Hash[]
@@ -47,7 +46,7 @@ class DNSQuery
 
   end
   def method_missing(type)
-    rv = @query.sort{|a,b| a[:answer] <=> b[:answer]}.map { |record| 
+    rv = @query.sort{|a,b| a[:answer].to_s <=> b[:answer].to_s}.map { |record| 
       record if record[:type] == type.to_s.upcase
     }.compact
     if rv.empty?

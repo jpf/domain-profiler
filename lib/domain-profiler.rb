@@ -1,10 +1,10 @@
+require 'ipaddr'
 require 'domain-profiler/dns'
 require 'domain-profiler/whois'
 require 'domain-profiler/ssl'
 require 'domain-profiler/name'
 require 'domain-profiler/information'
 require 'domain-profiler/ip-to-asn'
-
 
 class DomainProfiler
   def initialize(host)
@@ -21,4 +21,12 @@ class DomainProfiler
     @ssl.parse(data[:ssl])
   end
   attr_reader :dns, :whois, :ssl, :hostname
+end
+
+def orgname(input)
+  begin
+    IPtoASN.new(input).asn.orgname
+  rescue
+    input
+  end
 end

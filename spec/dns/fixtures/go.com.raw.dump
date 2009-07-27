@@ -1,0 +1,79 @@
+
+; <<>> DiG 9.4.3-P1 <<>> @4.2.2.2 ns go.com
+; (1 server found)
+;; global options:  printcmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 37998
+;; flags: qr rd ra; QUERY: 1, ANSWER: 4, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;go.com.				IN	NS
+
+;; ANSWER SECTION:
+go.com.			43200	IN	NS	sens02.dig.com.
+go.com.			43200	IN	NS	orns02.dig.com.
+go.com.			43200	IN	NS	sens01.dig.com.
+go.com.			43200	IN	NS	orns01.dig.com.
+
+;; Query time: 183 msec
+;; SERVER: 4.2.2.2#53(4.2.2.2)
+;; WHEN: Sun Jul 26 23:51:07 2009
+;; MSG SIZE  rcvd: 112
+
+
+; <<>> DiG 9.4.3-P1 <<>> @4.2.2.2 a go.com
+; (1 server found)
+;; global options:  printcmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 22676
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;go.com.				IN	A
+
+;; ANSWER SECTION:
+go.com.			1800	IN	A	198.105.193.70
+
+;; Query time: 42 msec
+;; SERVER: 4.2.2.2#53(4.2.2.2)
+;; WHEN: Sun Jul 26 23:51:07 2009
+;; MSG SIZE  rcvd: 40
+
+
+; <<>> DiG 9.4.3-P1 <<>> @4.2.2.2 mx go.com
+; (1 server found)
+;; global options:  printcmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 3802
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;go.com.				IN	MX
+
+;; ANSWER SECTION:
+go.com.			1800	IN	MX	0 mx.go.com.cust.b.hostedemail.com.
+
+;; Query time: 40 msec
+;; SERVER: 4.2.2.2#53(4.2.2.2)
+;; WHEN: Sun Jul 26 23:51:07 2009
+;; MSG SIZE  rcvd: 69
+
+
+; <<>> DiG 9.4.3-P1 <<>> @4.2.2.2 txt go.com
+; (1 server found)
+;; global options:  printcmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 15361
+;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;go.com.				IN	TXT
+
+;; AUTHORITY SECTION:
+go.com.			900	IN	SOA	dns1.cp.msft.net. dns-ops.dig.com. 2009072302 3600 900 608400 1800
+
+;; Query time: 34 msec
+;; SERVER: 4.2.2.2#53(4.2.2.2)
+;; WHEN: Sun Jul 26 23:51:07 2009
+;; MSG SIZE  rcvd: 88
+

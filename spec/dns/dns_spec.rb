@@ -74,12 +74,20 @@ describe DNS do
     empty.a[0].ttl.should == :none
   end
 
-  it "is able to deal with missing host information" do
+  it "is able to deal with missing MX records" do
     filename = File.expand_path(File.dirname(__FILE__) + '/fixtures/furbo.org.raw.dump')
     data = `cat #{filename}`
     @dns = DNS.new
     @dns.parse(data)
     @dns.mx[0].host.should == :none
+  end
+    
+  it "is able to deal with data from go.com" do
+    filename = File.expand_path(File.dirname(__FILE__) + '/fixtures/go.com.raw.dump')
+    data = `cat #{filename}`
+    @dns = DNS.new
+    @dns.parse(data)
+    @dns.a[0].answer.should == '198.105.193.70'
   end
     
 

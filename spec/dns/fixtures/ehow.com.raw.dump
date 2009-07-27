@@ -1,0 +1,57 @@
+
+; <<>> DiG 9.4.3-P1 <<>> @4.2.2.2 ns ehow.com
+; (1 server found)
+;; global options:  printcmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 10652
+;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;ehow.com.			IN	NS
+
+;; ANSWER SECTION:
+ehow.com.		3493	IN	NS	ns2.demandmedia.com.
+ehow.com.		3493	IN	NS	ns1.demandmedia.com.
+
+;; Query time: 24 msec
+;; SERVER: 4.2.2.2#53(4.2.2.2)
+;; WHEN: Mon Jul 27 00:18:55 2009
+;; MSG SIZE  rcvd: 74
+
+
+; <<>> DiG 9.4.3-P1 <<>> @4.2.2.2 a ehow.com
+; (1 server found)
+;; global options:  printcmd
+;; connection timed out; no servers could be reached
+
+; <<>> DiG 9.4.3-P1 <<>> @4.2.2.2 mx ehow.com
+; (1 server found)
+;; global options:  printcmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: SERVFAIL, id: 48740
+;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;ehow.com.			IN	MX
+
+;; Query time: 3291 msec
+;; SERVER: 4.2.2.2#53(4.2.2.2)
+;; WHEN: Mon Jul 27 00:19:13 2009
+;; MSG SIZE  rcvd: 26
+
+
+; <<>> DiG 9.4.3-P1 <<>> @4.2.2.2 txt ehow.com
+; (1 server found)
+;; global options:  printcmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: SERVFAIL, id: 25289
+;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;ehow.com.			IN	TXT
+
+;; Query time: 1337 msec
+;; SERVER: 4.2.2.2#53(4.2.2.2)
+;; WHEN: Mon Jul 27 00:19:14 2009
+;; MSG SIZE  rcvd: 26
+
