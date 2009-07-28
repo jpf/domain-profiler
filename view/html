@@ -1,22 +1,27 @@
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+<title>Some title!</title>
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8" />
+<meta name="robots" content="index, follow" />
+<meta name="author" content="Joel Franusic" />
+<link rel="stylesheet" href="public/style.css" media="screen,projection" type="text/css" />
 <script src="public/sorttable.js"></script>
 </head>
 <body>
-<% charts.sort {|a,b| a.to_s <=> b.to_s }.each do |kind,url| %>
-<img src="<%= url %>"/>
+<div id="container">
+<% charts.each do |chart| %>
+<img src="<%= chart[:url] %>"/>
 <% end %>
 
 <table class="sortable" border="1">
   <tr>
     <th>Domain</th>
-    <th>Web Host</th>
-    <th>Mail Host</th>
-    <th>DNS Host</th>
-    <th>Registrar</th>
-    <th>SSL Issuer</th>
-    <th>SSL Type</th>
-  </tr>
+    <% types.each do |type| %>
+    <th><%= full_name[type] %></th>
+    <% end %>
+ </tr>
   <% hosts.each do |domain,data| %>
   <tr>
     <td><%= domain %></td>
@@ -26,6 +31,6 @@
   </tr>
   <% end %>
 </table>
+</div><!-- container -->
 </body>
 </html>
-   

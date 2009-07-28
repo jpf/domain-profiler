@@ -24,6 +24,7 @@ file = File.new(filename)
 hosts = {}
 
 file.map {|host|
+  next if host.match(/^#/)
   host.chomp!
   profile = DomainProfiler.new(host)
 
@@ -90,6 +91,15 @@ output.each do |kind,values|
   }
 end
 
+  full_name = {
+    :web_host => 'Web Host',
+    :mail_host => 'Email Host',
+    :dns_host => 'DNS Host',
+    :registrar => 'Registrar',
+    :ssl_issuer => 'SSL Issuer',
+    :ssl_type => 'Certificate Type',
+  }
+
 
 output.each do |kind, summary_data|
   keys = []
@@ -99,8 +109,18 @@ output.each do |kind, summary_data|
     values.push(v)
   end
 
-  output[kind] = Gchart.pie(:size => '400x200', :title => kind.to_s, :labels => keys, :data => values) 
+  output[kind] = Gchart.pie(:size => '400x200', 
+#                            :background => 'F8ECDC',
+                            :bar_color => ['CFF09E','A8DBA8','79BD9A','3B8686','0B486B'],
+                            :color => '', 
+                            :title => full_name[kind], 
+                            :labels => keys, 
+                            :data => values
+                            ) 
 end
 
-charts = output
+charts = []
+types.each do |kind|
+  charts.push( {:kind => kind, :url => output[kind] } )
+end
 puts ERB.new(File.read("view/html")).result
