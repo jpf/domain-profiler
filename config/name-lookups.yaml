@@ -1,0 +1,251 @@
+--- 
+:softlayer: 
+  :name: SoftLayer
+  :dba: 
+  - softlayer corporate c
+  - softlayer technologies inc.
+  - softlayer technologies
+  - softlayer.com
+:netsol: 
+  :name: Network Solutions
+  :dba: 
+  - network solutions, llc.
+  - network solutions llc
+  - network solutions l.l.c.
+:everydns: 
+  :name: EveryDNS.net
+  :dba: 
+  - everydns.net
+:datapipe: 
+  :name: DataPipe
+  :dba: 
+  - datapipe, inc.
+  - datapipe.net
+:vzw_biz: 
+  :name: Verizon (Cybertrust)
+  :dba: 
+  - gte corporation
+:registercom: 
+  :name: Register.com
+  :dba: 
+  - register.com, inc.
+:markmonitor: 
+  :name: MarkMonitor
+  :dba: 
+  - markmonitor inc.
+:dyn_inc: 
+  :name: Dyn Inc
+  :dba: 
+  - mailhop.org
+  - mydyndns.org
+  - dynect.net
+  - dynamic network services, inc
+:amazon: 
+  :name: Amazon.com
+  :dba: 
+  - amazon.com
+  - amazon.com, inc.
+:thawte: 
+  :name: thawte
+  :dba: 
+  - thawte consulting cc
+  - thawte consulting (pty) ltd.
+:oneandone: 
+  :name: 1 and 1
+  :dba: 
+  - 1 & 1 internet ag
+  - 1and1.com
+:gandi: 
+  :name: Gandi SAS
+  :dba: 
+  - gandi sas
+  - gandi.net
+  - dns.gandi.net
+:digicert: 
+  :name: DigiCert
+  :dba: 
+  - digicert inc
+:webfaction: 
+  :name: WebFaction
+  :dba: 
+  - webfaction.com
+  - webfaction
+:safenames: 
+  :name: Safenames
+  :dba: 
+  - safenames ltd
+:mediatemple: 
+  :name: Media Temple
+  :dba: 
+  - media temple, inc.
+  - mediatemple.net
+:dynadot: 
+  :name: Dynadot
+  :dba: 
+  - dynadot, llc
+:aol: 
+  :name: AOL
+  :dba: 
+  - aol transit data network
+  - aol, llc
+  - aol.com
+:theplanet: 
+  :name: The Planet
+  :dba: 
+  - theplanet.com internet services
+  - theplanet.com internet services, inc.
+:pair: 
+  :name: pair Networks
+  :dba: 
+  - pair networks
+  - pair.com
+:godaddy: 
+  :name: Go Daddy
+  :dba: 
+  - domaincontrol.com
+  - godaddy.com
+  - godaddy.com, inc.
+  - secureserver.net
+  - wild west domains, inc.
+:dnsmadeeasy: 
+  :name: DNS Made Easy
+  :dba: 
+  - dnsmadeeasy.com
+:yahoo: 
+  :name: Yahoo!
+  :dba: 
+  - yahoo.com
+  - inktomi corporation
+:savis: 
+  :name: Savvis
+  :dba: 
+  - savvis
+  - savvis.net
+:melbourneit: 
+  :name: Melbourne IT
+  :dba: 
+  - melbourne it, ltd. d/b/a internet names worldwide
+:easydns: 
+  :name: easyDNS
+  :dba: 
+  - easydns technologies, inc.
+  - easydns.com
+  - easydns.net
+  - easydns.org
+:att: 
+  :name: ATT
+  :dba: 
+  - at&t enhanced network services
+  - at&t internet services
+  - att.net
+:tucows: 
+  :name: Tucows
+  :dba: 
+  - tucows inc.
+:pairnic: 
+  :name: pairNIC
+  :dba: 
+  - pairnic
+:google: 
+  :name: Google
+  :dba: 
+  - aspmx.l.google.com
+  - google.com
+  - googlemail.com
+  - l.google.com
+  - google
+  - google inc.
+:domaindiscover: 
+  :name: DomainDiscover
+  :dba: 
+  - domaindiscover
+  - domaindiscover.com
+:ait: 
+  :name: AIT
+  :dba: 
+  - advanced internet technologies, inc.
+:serverbeach: 
+  :name: ServerBeach
+  :dba: 
+  - serverbeach
+:microsoft: 
+  :name: Microsoft
+  :dba: 
+  - msft.net
+  - microsoft.com
+  - microsoft corp
+:enom: 
+  :name: eNom
+  :dba: 
+  - emailsrvr.com
+  - enom, inc.
+  - enom, incorporated
+  - messagingengine.com
+  - name-services.com
+  - registrar-servers.com
+:comodo: 
+  :name: Comodo Group
+  :dba: 
+  - comodo ca limited
+  - the usertrust network
+:ultradns: 
+  :name: Neustar (UltraDNS)
+  :dba: 
+  - ultradns.info
+  - ultradns.net
+  - ultradns.org
+  - ultradns.co.uk
+:postini: 
+  :name: Google (Postini)
+  :dba: 
+  - psmtp.com
+:iac: 
+  :name: IAC Search and Media
+  :dba: 
+  - iac search media inc
+:domainpeople: 
+  :name: DomainPeople
+  :dba: 
+  - domainpeople, inc.
+:slicehost: 
+  :name: Slicehost
+  :dba: 
+  - slicehost llc
+  - slicehost.net
+:netnames: 
+  :name: NetNames
+  :dba: 
+  - group nbt plc aka netnames
+:equifax: 
+  :name: Equifax
+  :dba: 
+  - equifax secure inc.
+  - equifax
+:csc: 
+  :name: Corporation Service Company
+  :dba: 
+  - csc corporate domains, inc.
+:verisign: 
+  :name: VeriSign
+  :dba: 
+  - verisign trust network
+  - verisign, inc.
+:rackspace: 
+  :name: Rackspace
+  :dba: 
+  - rackspace.com
+  - rackspace.com, ltd.
+:internap: 
+  :name: Internap
+  :dba: 
+  - pnap.net
+  - internap network services corporation
+:dotster: 
+  :name: Dotster
+  :dba: 
+  - dotster, inc.
+:akami: 
+  :name: Akamai
+  :dba: 
+  - akam.net
+  - akamai technologies
