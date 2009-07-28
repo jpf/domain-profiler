@@ -1,0 +1,29 @@
+
+/*
+CSS from:
+  http://fluidmind.org/test/css/tables.html
+Colour pallete inspired by:
+  http://www.colourlovers.com/palette/580974/Adrift_in_Dreams
+*/
+table {
+    border-spacing: 0px;
+    border-collapse: collapse;
+    border-top: 4px solid #3B8686;
+    border-bottom: 1px solid #3B8686;
+}
+table th {
+    text-align: left;
+    font-weight: normal;
+    padding: 0.2em 0.5em;
+    border-top: 1px dotted #3B8686;
+}
+table td {
+    text-align: right;
+    border-top: 1px dotted #3B8686;
+    padding: 0.2em 0.5em;
+}
+table thead th {
+    text-align: center;
+   font-weight: bold;
+    border-bottom: 1px solid #3B8686;
+}
