@@ -10,18 +10,24 @@ table {
     border-collapse: collapse;
     border-top: 4px solid #3B8686;
     border-bottom: 1px solid #3B8686;
+    margin-top: 20px;
 }
+
 table th {
     text-align: left;
-    font-weight: normal;
     padding: 0.2em 0.5em;
     border-top: 1px dotted #3B8686;
+    font-family: Arial;
+    text-transform: uppercase;
 }
+
 table td {
     text-align: right;
     border-top: 1px dotted #3B8686;
     padding: 0.2em 0.5em;
+    color: #475258;
 }
+
 table thead th {
     text-align: center;
    font-weight: bold;
