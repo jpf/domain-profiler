@@ -5,6 +5,12 @@ CSS from:
 Colour pallete inspired by:
   http://www.colourlovers.com/palette/580974/Adrift_in_Dreams
 */
+
+div {
+    width: 80%;
+    margin-left: 10%;
+}
+
 table {
     border-spacing: 0px;
     border-collapse: collapse;
