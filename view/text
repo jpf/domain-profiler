@@ -3,10 +3,10 @@
     <%= "#{record.answer} (#{ orgname(record.answer) })" %><% end %>
 
   DNS Hosting:<% profile.dns.ns.each do |record| %>
-    <%= record.answer %><% end %>
+    <%= "#{record.answer} (#{ name.full(name.simplify(name.shorten(record.answer))) })" %><% end %>
 
   Email Hosting:<% profile.dns.mx.each do |record| %>
-    <%= record.answer %><% end %>
+    <%= "#{record.answer} (#{ name.full(name.simplify(name.shorten(record.answer))) })" %><% end %>
 
   Domain Registrar:
     <%= profile.whois.registrar %>

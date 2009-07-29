@@ -5,6 +5,7 @@ require 'domain-profiler/ssl'
 require 'domain-profiler/name'
 require 'domain-profiler/information'
 require 'domain-profiler/ip-to-asn'
+require 'yaml'
 
 class DomainProfiler
   def initialize(host)

@@ -1,7 +1,6 @@
 class Name
   def initialize
-#    lookup_file = File.expand_path(File.dirname(__FILE__) + '../../config/name-lookups.yaml')
-    lookup_file = 'config/name-lookups.yaml'
+    lookup_file = File.expand_path(File.dirname(__FILE__) + '../../../config/name-lookups.yaml')
     @aliases = YAML::load(File.open(lookup_file))
     @lookup = {}
     @aliases.keys.each {|shortname|
