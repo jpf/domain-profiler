@@ -22,8 +22,12 @@ filename = ARGV[0]
 file = File.new(filename)
 
 hosts = {}
+list_name = 'REPLACE ME'
 
 file.map {|host|
+  if match_data = host.match(/^#List:(.*)/)
+    list_name = match_data[1]
+  end
   next if host.match(/^#/)
   host.chomp!
   profile = DomainProfiler.new(host)

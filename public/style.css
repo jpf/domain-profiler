@@ -6,17 +6,23 @@ Colour pallete inspired by:
   http://www.colourlovers.com/palette/580974/Adrift_in_Dreams
 */
 
-div {
-    width: 80%;
-    margin-left: 10%;
+div#data {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+body {
+    text-align: center;
 }
 
 table {
+    width: 100%;
     border-spacing: 0px;
     border-collapse: collapse;
     border-top: 4px solid #3B8686;
     border-bottom: 1px solid #3B8686;
-    margin-top: 20px;
+    margin-top: 40px;
+    font-size: 0.8em;
 }
 
 table th {
@@ -31,7 +37,8 @@ table td {
     text-align: right;
     border-top: 1px dotted #3B8686;
     padding: 0.2em 0.5em;
-    color: #475258;
+    /* color: #475258; */
+    color: #353535;
 }
 
 table thead th {

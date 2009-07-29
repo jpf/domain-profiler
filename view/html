@@ -2,7 +2,7 @@
 "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>Some title!</title>
+<title><%= list_name %></title>
 <meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8" />
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Joel Franusic" />
@@ -11,26 +11,33 @@
 </head>
 <body>
 <div id="container">
-<% charts.each do |chart| %>
-<img src="<%= chart[:url] %>"/>
-<% end %>
 
-<table class="sortable" border="1">
-  <tr>
-    <th>Domain</th>
-    <% types.each do |type| %>
-    <th><%= full_name[type] %></th>
-    <% end %>
- </tr>
-  <% hosts.each do |domain,data| %>
-  <tr>
-    <td><%= domain %></td>
-    <% types.each do |type| %>
-    <td><%= data[type].map{|i| if i.is_a? String; "\"#{i}\"" ; else x = fullname(i); end}.join(', ') %></td>
-    <% end %>
-  </tr>
+  <h1><%= list_name %></h1>
+
+  <div id="charts">
+  <% charts.each do |chart| %>
+  <img src="<%= chart[:url] %>"/>
   <% end %>
-</table>
+  </div>
+
+  <div id="data">
+  <table class="sortable" border="1">
+    <tr>
+      <th>Domain</th>
+      <% types.each do |type| %>
+      <th><%= full_name[type] %></th>
+      <% end %>
+    </tr>
+    <% hosts.each do |domain,data| %>
+    <tr>
+      <td><%= domain %></td>
+    <% types.each do |type| %>
+      <td><%= data[type].map{|i| if i.is_a? String; "\"#{i}\"" ; else x = fullname(i); end}.join(', ') %></td>
+      <% end %>
+    </tr>
+    <% end %>
+  </table>
+  </div>
 </div><!-- container -->
 </body>
 </html>

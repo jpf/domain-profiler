@@ -28,6 +28,7 @@ Decisions that cost money:
   - Mail host
   - SSL Issuer
   - SSL Certificate type
+  - Where are images are hosted?
 
 Decisions that don't necessarily cost money:
   - SPF records, and values thereof
