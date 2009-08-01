@@ -1,16 +1,46 @@
+<%
+name = Name.new
+
+web = {}
+profile.dns.a.each do |record|
+  org = name.full(name.simplify(orgname(record.answer)))
+  web[org] = [] unless web[org].is_a? Array
+  web[org].push(record.answer)
+end
+
+dns = {}
+profile.dns.ns.each do |record|
+  org = name.full(name.simplify(name.shorten(record.answer)))
+  dns[org] = [] unless dns[org].is_a? Array
+  dns[org].push(record.answer)
+end
+
+email = {}
+profile.dns.mx.each do |record|
+  org = name.full(name.simplify(name.shorten(record.answer)))
+  email[org] = [] unless email[org].is_a? Array
+  email[org].push(record.answer)
+end
+
+%>
+
 ==========[ <%= profile.hostname %> ]==========
-  Web Hosting:<% profile.dns.a.each do |record| %>
-    <%= "#{record.answer} (#{ orgname(record.answer) })" %><% end %>
+Web Hosting:<% web.each do |org,hosts| %>
+  (<%= org %>)<% hosts.each do |host| %>
+      <%= host %><% end %><% end %>
 
-  DNS Hosting:<% profile.dns.ns.each do |record| %>
-    <%= "#{record.answer} (#{ name.full(name.simplify(name.shorten(record.answer))) })" %><% end %>
+DNS Hosting:<% dns.each do |org,hosts| %>
+  (<%= org %>)<% hosts.each do |host| %>
+      <%= host %><% end %><% end %>
 
-  Email Hosting:<% profile.dns.mx.each do |record| %>
-    <%= "#{record.answer} (#{ name.full(name.simplify(name.shorten(record.answer))) })" %><% end %>
+Email Hosting:<% email.each do |org,hosts| %>
+  (<%= org %>)<% hosts.each do |host| %>
+      <%= host %><% end %><% end %>
 
-  Domain Registrar:
-    <%= profile.whois.registrar %>
+Domain Registrar:
+  (<%= name.full(name.simplify(profile.whois.registrar[0])) %>)
 
-  SSL Issuer:
-    <%= profile.ssl.ca %> (<%= profile.ssl.cn %>)
+SSL Issuer:
+  (<%= name.full(name.simplify(profile.ssl.ca)) %>)
+      Common Name: <%= profile.ssl.cn %>
 
