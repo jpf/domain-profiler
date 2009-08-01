@@ -89,6 +89,7 @@ output.each do |kind,values|
   smallest_value = total * smallest_percent
   values.each {|k,v| 
     if v < smallest_value
+      values[:other] = 1 unless values[:other].is_a? Integer
       values[:other] += v
       values.delete(k)
     end
