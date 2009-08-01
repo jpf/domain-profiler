@@ -4,6 +4,7 @@ class Name
     @aliases = YAML::load(File.open(lookup_file))
     @lookup = {}
     @aliases.keys.each {|shortname|
+      next unless @aliases[shortname][:dba].is_a? Array
       @aliases[shortname][:dba].each {|dba|
         @lookup[dba] = shortname
       }

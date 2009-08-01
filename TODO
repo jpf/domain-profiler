@@ -1,6 +1,6 @@
-We should be able to tell the difference between EC2 hosts and normal amazon hosts
+FIX ME: Why are some of the IP addresses for hp.com returning blank?
 
-Why does DNS detection return :none sometimes? WTF
+We should be able to tell the difference between EC2 hosts and normal amazon hosts
 
 Determine if there is a whois error, or if it's a parsing error
 

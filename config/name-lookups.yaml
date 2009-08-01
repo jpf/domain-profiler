@@ -1,4 +1,10 @@
 --- 
+:self:
+  :name: Self Hosted
+:other:
+  :name: Other / Self Hosted
+:none:
+  :name: None
 :softlayer: 
   :name: SoftLayer
   :dba: 
@@ -253,3 +259,7 @@
   :name: Domain Bank
   :dba:
   - dstr acquisition pa i, llc dba domainbank.com
+:nettica:
+  :name: Nettica
+  :dba:
+  - nettica.com

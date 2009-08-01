@@ -39,5 +39,8 @@
   </table>
   </div>
 </div><!-- container -->
+<div id="footer">
+  Generated on <%= Time.now.strftime('%Y-%m-%d') %> by <a href="http://github.com/jpf/domain-profiler/tree/master">domain-profiler</a>
+</div>
 </body>
 </html>
