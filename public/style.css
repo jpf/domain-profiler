@@ -46,3 +46,9 @@ table thead th {
    font-weight: bold;
     border-bottom: 1px solid #3B8686;
 }
+
+div#footer {
+    margin-top: 10px;
+    font-family: Arial;
+    font-size: 0.5em;
+}
