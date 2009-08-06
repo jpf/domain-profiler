@@ -5,25 +5,25 @@ domain-profiler is a tool that uses information from various sources (Whois, DNS
 These decisions fall into two categories:
 
 1. Decisions that cost money.
- * Where the website is hosted.
- * Where DNS is hosted.
- * Where email is hosted.
- * The registrar of the domain.
- * Who issued the domain's SSL certificate (if anybody)
- * What sort of SSL certificate the domain has (if any)
+    * Where the website is hosted.
+    * Where DNS is hosted.
+    * Where email is hosted.
+    * The registrar of the domain.
+    * Who issued the domain's SSL certificate (if anybody)
+    * What sort of SSL certificate the domain has (if any)
 2. Decisions that might or might not cost money.
- * Does the website use an image host like S3 or Imageshack?
- * Does the domain have SPF records? If so, what values?
- * What TTL do the DNS records have?
- * Expiration date for domain.
- * Expiration date for SSL certificate.
- * Is there more than one result for the A, MX, or NS records?
- * Are services hosted in different Autonomous Systems?
- * Are all services (A, MX, NS) in the same AS?
- * Does the main webpage have valid XHTML?
- * What type of frontend is the domain using?
- * What type of mailserver is the domain using?
- * Does the domain have a "*" record in DNS?
+    * Does the website use an image host like S3 or Imageshack?
+    * Does the domain have SPF records? If so, what values?
+    * What TTL do the DNS records have?
+    * Expiration date for domain.
+    * Expiration date for SSL certificate.
+    * Is there more than one result for the A, MX, or NS records?
+    * Are services hosted in different Autonomous Systems?
+    * Are all services (A, MX, NS) in the same AS?
+    * Does the main webpage have valid XHTML?
+    * What type of frontend is the domain using?
+    * What type of mailserver is the domain using?
+    * Does the domain have a "*" record in DNS?
 
 This version of domain-profiler only generates reports on the "Decisions that cost money".
 
@@ -31,7 +31,36 @@ This version of domain-profiler only generates reports on the "Decisions that co
 
 ### Example output from the 'profile' command:
 
-<script src="http://gist.github.com/163180.js"></script>
+    $ ./profile github.com
+    Fetching data for github.com: DNS Whois SSL ...
+    
+    
+    ==========[ github.com ]==========
+    Web Hosting:
+      (HERAKLES LLC)
+          65.74.177.129
+    
+    DNS Hosting:
+      (EveryDNS.net)
+          ns1.everydns.net.
+          ns2.everydns.net.
+          ns3.everydns.net.
+          ns4.everydns.net.
+    
+    Email Hosting:
+      (Google)
+          1 ASPMX.L.GOOGLE.com.
+          10 ASPMX2.GOOGLEMAIL.com.
+          10 ASPMX3.GOOGLEMAIL.com.
+          5 ALT1.ASPMX.L.GOOGLE.com.
+          5 ALT2.ASPMX.L.GOOGLE.com.
+    
+    Domain Registrar:
+      (Go Daddy)
+    
+    SSL Issuer:
+      (GoDaddy.com, Inc.)
+          Common Name: *.github.com
 
 ### Example output from the 'profile-list' command:
 
