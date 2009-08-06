@@ -78,8 +78,8 @@ This version of domain-profiler only generates reports on the "Decisions that co
 Thanks
 ======
 
-* Brian Lopez for help with Ruby and RSpec.
-* Team Cymru for the awesome IP to ASN API.
+* [Brian Lopez](http://github.com/brianmario) for help with Ruby and RSpec.
+* Team Cymru for the awesome [IP to ASN API](http://www.team-cymru.org/Services/ip-to-asn.html).
 * Hacker News user <a href="http://news.ycombinator.com/user?id=brett">brett</a> for the inspiration.
 
 LICENSE
