@@ -45,7 +45,7 @@ The domains with SSL certificates tend to have certificates issued by VeriSign.
 
 <a href="http://jpf.github.com/domain-profiler/ycombinator.html">YCombinator startups</a>
 
-YCombinator startups use a wide range of web hosts, but tend towards SoftLayer, Amazon, and Slicehost. If they aren't using Google Apps for Email hosting, they do it themselves. They generally do not host DNS themselves (much to my surprise - I expected to see a smaller list of DNS providers). They largely register their domains and get SSL certificates from GoDaddy, which I found surprising considering <a href="http://en.wikipedia.org/wiki/Go_Daddy#Controversies">GoDaddy's reputation</a>.
+YCombinator startups use a wide range of web hosts, but tend towards SoftLayer, Amazon, and Slicehost. If they aren't using Google Apps for Email hosting, they do it themselves. They generally do not host DNS themselves (much to my surprise - I expected to see a smaller list of DNS providers). They largely register their domains and get SSL certificates from GoDaddy, which I found surprising considering <a href="http://en.wikipedia.org/wiki/Go_Daddy#Controversies">GoDaddy's reputation</a>. 
 
 == Thanks
 
