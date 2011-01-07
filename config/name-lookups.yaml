@@ -278,7 +278,7 @@
   :name: Linode
   :dba: 
   - linode.com
-:404:
-  :name: 404?
+:issue:
+  :name: DNS issue
   :dba:
   - opendns, llc
