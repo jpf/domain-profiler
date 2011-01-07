@@ -235,9 +235,12 @@
   - rackspace.com
   - rackspace.com, ltd.
   - rackspace hosting
+  - stabletransit.com
+:slicehost:
+  :name: Slicehost
+  :dba:
   - slicehost llc
   - slicehost.net
-  - stabletransit.com
 :internap: 
   :name: Internap
   :dba: 
@@ -278,6 +281,7 @@
   :name: Linode
   :dba: 
   - linode.com
+  - global net access, llc
 :issue:
   :name: DNS issue
   :dba:
