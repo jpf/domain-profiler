@@ -19,6 +19,11 @@ class Array
 end
 
 
+if ARGV.length == 0
+   print "Usage: ./profile-list [file containing one domain per line] 'header to put in HTML output'\n"
+   exit
+end
+
 filename = ARGV[0]
 file = File.new(filename)
 
