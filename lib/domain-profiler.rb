@@ -1,6 +1,7 @@
 require 'ipaddr'
 require 'domain-profiler/dns'
 require 'domain-profiler/whois'
+require 'domain-profiler/whois-orgname'
 require 'domain-profiler/ssl'
 require 'domain-profiler/name'
 require 'domain-profiler/information'
@@ -26,7 +27,12 @@ end
 
 def orgname(input)
   begin
-    IPtoASN.new(input).asn.orgname
+    name = WhoisOrgName.new(input).orgname
+    if name == 'Unknown'
+      IPtoASN.new(input).asn.orgname
+    else
+      name
+    end
   rescue
     input
   end
