@@ -81,13 +81,14 @@ Thanks
 * [Brian Lopez](http://github.com/brianmario) for help with Ruby and RSpec.
 * Team Cymru for the awesome [IP to ASN API](http://www.team-cymru.org/Services/ip-to-asn.html).
 * Hacker News user <a href="http://news.ycombinator.com/user?id=brett">brett</a> for the inspiration.
+* [Jed Smith](http://jedsmith.org/) for the advice on using ARIN's WHOIS to find more accruate OrgName data on IP addresses.
 
 LICENSE
 =======
 
     (The MIT License)
     
-    Copyright (c) 2009 Joel Franusic <joel@franusic.com>
+    Copyright (c) 2009-2010 Joel Franusic <joel@franusic.com>
     
     Permission is hereby granted, free of charge, to any person obtaining
     a copy of this software and associated documentation files (the
