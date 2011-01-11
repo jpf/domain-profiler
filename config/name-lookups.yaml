@@ -12,6 +12,8 @@
   - softlayer technologies inc.
   - softlayer technologies
   - softlayer.com
+  - theplanet.com internet services
+  - theplanet.com internet services, inc.
 :netsol: 
   :name: Network Solutions
   :dba: 
@@ -46,6 +48,7 @@
   - mydyndns.org
   - dynect.net
   - dynamic network services, inc
+  - dynamic network services, inc.
 :amazon: 
   :name: Amazon.com
   :dba: 
@@ -95,11 +98,6 @@
   - aol transit data network
   - aol, llc
   - aol.com
-:theplanet: 
-  :name: The Planet
-  :dba: 
-  - theplanet.com internet services
-  - theplanet.com internet services, inc.
 :pair: 
   :name: pair Networks
   :dba: 
@@ -122,6 +120,7 @@
   :dba: 
   - yahoo.com
   - inktomi corporation
+  - altavista company
 :savis: 
   :name: Savvis
   :dba: 
@@ -213,11 +212,6 @@
   :name: DomainPeople
   :dba: 
   - domainpeople, inc.
-:slicehost: 
-  :name: Slicehost
-  :dba: 
-  - slicehost llc
-  - slicehost.net
 :netnames: 
   :name: NetNames
   :dba: 
@@ -241,6 +235,13 @@
   :dba: 
   - rackspace.com
   - rackspace.com, ltd.
+  - rackspace hosting
+  - stabletransit.com
+:slicehost:
+  :name: Slicehost
+  :dba:
+  - slicehost llc
+  - slicehost.net
 :internap: 
   :name: Internap
   :dba: 
@@ -263,3 +264,27 @@
   :name: Nettica
   :dba:
   - nettica.com
+  - nettica domains, inc.
+:he: 
+  :name: Hurricane Electric
+  :dba: 
+  - hurricane electric, inc.
+:dreamhost: 
+  :name: DreamHost
+  :dba: 
+  - new dream network, llc
+  - dreamhost.com
+:zerigo: 
+  :name: Zerigo
+  :dba: 
+  - zerigo.net
+:linode: 
+  :name: Linode
+  :dba: 
+  - linode
+  - linode.com
+  - global net access, llc
+:issue:
+  :name: DNS issue
+  :dba:
+  - opendns, llc

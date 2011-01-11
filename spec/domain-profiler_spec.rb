@@ -5,7 +5,7 @@ require 'domain-profiler'
 describe DomainProfiler do
 
   it "has an orgname function that knows the orgname for 4.2.2.2" do
-    orgname('4.2.2.2').should == 'Level 3 Communications'
+    orgname('4.2.2.2').should == 'Level 3 Communications, Inc.'
   end
 
   it "has an orgname function that can handle nil as input" do

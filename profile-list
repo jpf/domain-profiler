@@ -19,11 +19,16 @@ class Array
 end
 
 
+if ARGV.length == 0
+   print "Usage: ./profile-list [file containing one domain per line] 'header to put in HTML output'\n"
+   exit
+end
+
 filename = ARGV[0]
 file = File.new(filename)
 
 hosts = {}
-list_name = 'REPLACE ME'
+list_name = ARGV[1] ? ARGV[1] : 'REPLACE ME'
 
 file.map {|host|
   if match_data = host.match(/^#List:(.*)/)
