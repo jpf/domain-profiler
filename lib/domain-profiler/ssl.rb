@@ -16,7 +16,7 @@ class SSL
       output = stdout.readlines
     }
     output.each { |line| 
-      (k,v) = line.gsub("\n", '').split(/=/,2).to_a.flatten
+      (k,v) = [*line.gsub("\n", '').split(/\=/,2)].flatten
       @data[k] = v
       @no_data = false
     }
@@ -29,7 +29,7 @@ class SSL
     return [:none] if @no_data
     return [:none] unless @data.is_a? Hash
     begin
-      @data['issuer'].match(/O=([^\/]+)\/[A-Z]/)[1].to_a
+      [*@data['issuer'].match(/O=([^\/]+)\/[A-Z]/)[1]]
     rescue
       [:none]
     end
