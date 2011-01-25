@@ -1,4 +1,5 @@
 require 'rake'
+# Commenting out this next line will fix the stupid "undefined method `gem' for main:Object" error on debian systems ಠ_ಠ
 gem "rspec", "~>1.3.0"
 require 'spec/rake/spectask'
 
