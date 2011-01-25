@@ -8,8 +8,8 @@ describe Whois do
   end
 
   it "is fetching information from ARIN" do
-    rv = @whois.grep('ARIN WHOIS')
-    rv.should == '# ARIN WHOIS data and services are subject to the Terms of Use'
+    rv = @whois.grep(/available at:/)
+    rv.should == 'https://www.arin.net/whois_tou.html'
   end
 
  end
