@@ -14,7 +14,7 @@ class WhoisOrgName
     if File.exists?(filename) and use_cache
       @data = open(filename) { |f| Marshal.load(f) }
     else
-      @data = `sleep 1; whois 'n #{ip_address}'`
+      @data = `sleep 1; whois -h whois.arin.net 'n #{ip_address}'`
       open(filename, 'w') { |f| Marshal.dump(@data, f) } if use_cache
     end
   end
