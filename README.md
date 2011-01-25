@@ -27,26 +27,35 @@ These decisions fall into two categories:
 
 This version of domain-profiler only generates reports on the "Decisions that cost money".
 
-## Examples
+## Setup and Examples
 
-### Example output from the 'profile' command:
+### Setup
+
+The `./profile-list` command uses Google Charts, so you'll need to install [Matt Aimonetti's](https://github.com/mattetti) [googlecharts](https://github.com/mattetti/googlecharts) gem.
+
+`gem install googlecharts`
+
+### Example output from the `./profile` command:
 
     $ ./profile github.com
     Fetching data for github.com: DNS Whois SSL ...
-    
-    
+
+
     ==========[ github.com ]==========
     Web Hosting:
-      (HERAKLES LLC)
-          65.74.177.129
-    
+      (Rackspace)
+          207.97.227.239
+
     DNS Hosting:
+      (anchor.net.au)
+          ns1.anchor.net.au.
+          ns2.anchor.net.au.
       (EveryDNS.net)
           ns1.everydns.net.
           ns2.everydns.net.
           ns3.everydns.net.
           ns4.everydns.net.
-    
+
     Email Hosting:
       (Google)
           1 ASPMX.L.GOOGLE.com.
@@ -54,26 +63,27 @@ This version of domain-profiler only generates reports on the "Decisions that co
           10 ASPMX3.GOOGLEMAIL.com.
           5 ALT1.ASPMX.L.GOOGLE.com.
           5 ALT2.ASPMX.L.GOOGLE.com.
-    
+
     Domain Registrar:
       (Go Daddy)
-    
+
     SSL Issuer:
       (GoDaddy.com, Inc.)
           Common Name: *.github.com
 
-### Example output from the 'profile-list' command:
+### Example output from the `./profile-list` command:
 
-1. [Quantcast Top 100](http://jpf.github.com/domain-profiler/quantcast.html)
+#### [Quantcast Top 100](http://jpf.github.com/domain-profiler/quantcast.html)
 
-    The Quantcast Top 100 domains appear to largely self host their websites, Email, and DNS.
-    Interestingly, a large segment of these domains are registered with Mark Monitor or the Corporation Service Company, presumeably for the domain management and brand protection services that these companies provide.
-    The domains with SSL certificates tend to have certificates issued by VeriSign.
+    ./profile-list quantcast 'Quantcast Top 100' > quantcast.html
 
+Based on the output from the `profile-list` command, the Quantcast Top 100 domains appear to largely self host their websites, Email, and DNS. Interestingly, a large segment of these domains are registered with Mark Monitor or the Corporation Service Company, presumeably for the domain management and brand protection services that these companies provide. The domains with SSL certificates tend to have certificates issued by VeriSign.
 
-2. [Y Combinator startups](http://jpf.github.com/domain-profiler/ycombinator.html)
+#### [Y Combinator startups](http://jpf.github.com/domain-profiler/ycombinator.html)
 
-    Y Combinator startups use a wide range of web hosts, but tend towards SoftLayer, Amazon, and Slicehost. If they aren't using Google Apps for Email hosting, they do it themselves. They generally do not host DNS themselves (much to my surprise - I expected to see a smaller list of DNS providers). They largely register their domains and get SSL certificates from GoDaddy, which I found surprising considering [GoDaddy's reputation](http://en.wikipedia.org/wiki/Go_Daddy#Controversies)
+      ./profile-list ycombinator 'Y Combinator startups' > ycombinator.html
+
+Based on the output from the `profile-list` command, Y Combinator startups use a wide range of web hosts, but tend towards SoftLayer, Amazon, and Slicehost. If they aren't using Google Apps for Email hosting, they do it themselves. They generally do not host DNS themselves (much to my surprise - I expected to see a smaller list of DNS providers). They largely register their domains and get SSL certificates from GoDaddy, which I found surprising considering [GoDaddy's reputation](http://en.wikipedia.org/wiki/Go_Daddy#Controversies)
     
 Thanks
 ======
