@@ -2,7 +2,7 @@
 require File.expand_path(File.dirname(__FILE__) + '/../spec_helper.rb')
 require 'domain-profiler/whois-orgname'
 
-describe Whois do
+describe WhoisOrgName do
   before (:all) do
     @whois = WhoisOrgName.new('4.2.2.2', false)
   end
