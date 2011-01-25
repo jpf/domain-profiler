@@ -8,7 +8,7 @@ class WhoisOrgName
     end
 
 
-    version = 'v1'
+    version = 'v2'
     filename = "cache/whois-orgname-#{ip_address}.#{version}.cache"
     @data = {}
     if File.exists?(filename) and use_cache
