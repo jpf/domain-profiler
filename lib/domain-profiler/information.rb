@@ -21,8 +21,9 @@ class Information
       data[:version] = version
 
       status "Fetching data for #{host}: DNS "
+      extended_host = "www." + host
       dnsopt = '+noadditional +noauthority'
-      data[:dns] = `server=#{dns_server}; host=#{host}; dig @$server ns $host #{dnsopt}; dig @$server a $host #{dnsopt}; dig @$server mx $host #{dnsopt}; dig @$server txt $host #{dnsopt}`
+      data[:dns] = `server=#{dns_server}; host=#{host}; dig @$server ns $host #{dnsopt}; dig @$server a $host #{dnsopt}; dig @$server a #{extended_host} #{dnsopt}; dig @$server mx $host #{dnsopt}; dig @$server txt $host #{dnsopt}`
 
       status 'Whois '
       data[:whois] = `sleep 2; whois 'domain #{host}'`
