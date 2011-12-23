@@ -19,11 +19,17 @@ class Array
 end
 
 
+if ARGV.length != 2
+   print "Usage: ./profile-godaddy [file containing one domain per line] 'name of company grouping'\n"
+   exit
+end
+
 filename = ARGV[0]
 file = File.new(filename)
 
 hosts = {}
 list_name = ARGV[1] ? ARGV[1] : 'REPLACE ME'
+
 
 max_domain_length = 0
 
@@ -51,6 +57,33 @@ file.map {|host|
   hosts[host] = out
 }
 
+print "This is a list of all %s companies that appear to do business with \nGoDaddy.\n" % [list_name]
+
+puts <<PREAMBLE_END
+
+In addition to showing which domains were registered through GoDaddy, this list
+also shows domains that use GoDaddy's DNS service or use SSL certificates 
+purchased from GoDaddy.
+
+Since it's easier to stop doing business with GoDaddy if your DNS is hosted
+elsewhere, I've sorted this list according to the relative ease of moving away
+from GoDaddy: The closer a domain is to the top of this list, the easier it
+should be for the owners of that domain to stop doing business with GoDaddy.
+
+---
+
+Corrections to this list are welcome.
+
+I prefer pull-requests on GitHub, you can also contact me on Twitter (@jf).
+
+The code I used to generate this list is here:
+https://github.com/jpf/domain-profiler
+
+
+---
+
+PREAMBLE_END
+
 # Turn the list of host data into a hash of type data
 hosts.sort_by{ |hostname,data| data[:sort_key].to_s + hostname }.each do |hostname,data|
   next unless data[:sort_key] > 0
@@ -61,4 +94,5 @@ hosts.sort_by{ |hostname,data| data[:sort_key].to_s + hostname }.each do |hostna
                     ]
 
 end
+
 
