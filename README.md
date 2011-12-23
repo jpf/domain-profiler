@@ -24,6 +24,8 @@ These decisions fall into two categories:
     * What type of frontend is the domain using?
     * What type of mailserver is the domain using?
     * Does the domain have a "*" record in DNS?
+    * What sub-domains are dectable via HTTP 3xx redirects?
+    * What sub-domains are dectable in the contents of '/'?
 
 This version of domain-profiler only generates reports on the "Decisions that cost money".
 
