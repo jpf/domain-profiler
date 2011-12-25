@@ -37,6 +37,7 @@ justin.tv                            SSL
 listia.com                           SSL
 meetingmix.com                       SSL
 opez.com                             SSL
+rescuetime.com                       SSL
 tuxebo.com                           SSL
 wufoo.com                            SSL
 yumdots.com                      DNS    
@@ -44,6 +45,7 @@ addher.com             REGISTRAR
 adgrok.com             REGISTRAR        
 adioso.com             REGISTRAR        
 adpinion.com           REGISTRAR        
+aerofs.com             REGISTRAR        
 answerly.com           REGISTRAR        
 auctomatic.com         REGISTRAR        
 backtype.com           REGISTRAR        
@@ -116,7 +118,6 @@ interstateapp.com      REGISTRAR     SSL
 meetcast.com           REGISTRAR     SSL
 pagerduty.com          REGISTRAR     SSL
 polleverywhere.com     REGISTRAR     SSL
-rescuetime.com         REGISTRAR     SSL
 scribd.com             REGISTRAR     SSL
 songkick.com           REGISTRAR     SSL
 startuply.com          REGISTRAR     SSL
@@ -125,7 +126,6 @@ virtualmin.com         REGISTRAR     SSL
 voxli.com              REGISTRAR     SSL
 1000memories.com       REGISTRAR DNS    
 140bets.com            REGISTRAR DNS    
-aerofs.com             REGISTRAR DNS    
 anyvite.com            REGISTRAR DNS    
 cardpool.com           REGISTRAR DNS    
 comprehendsystems.com  REGISTRAR DNS    
@@ -145,6 +145,7 @@ popcuts.com            REGISTRAR DNS
 readyforzero.com       REGISTRAR DNS    
 seeinginteractive.com  REGISTRAR DNS    
 snipd.com              REGISTRAR DNS    
+snipshot.com           REGISTRAR DNS    
 splashup.com           REGISTRAR DNS    
 tagstand.com           REGISTRAR DNS    
 teevox.com             REGISTRAR DNS    
@@ -164,5 +165,4 @@ custora.com            REGISTRAR DNS SSL
 foodoro.com            REGISTRAR DNS SSL
 greplin.com            REGISTRAR DNS SSL
 hellofax.com           REGISTRAR DNS SSL
-snipshot.com           REGISTRAR DNS SSL
 yougotlistings.com     REGISTRAR DNS SSL
