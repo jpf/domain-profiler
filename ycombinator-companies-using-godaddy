@@ -33,6 +33,7 @@ everyme.com                          SSL
 fanchatter.com                       SSL
 freshplum.com                        SSL
 ididwork.com                         SSL
+interstateapp.com                    SSL
 justin.tv                            SSL
 listia.com                           SSL
 meetingmix.com                       SSL
@@ -40,6 +41,7 @@ opez.com                             SSL
 rescuetime.com                       SSL
 tuxebo.com                           SSL
 wufoo.com                            SSL
+debteye.com                      DNS    
 yumdots.com                      DNS    
 addher.com             REGISTRAR        
 adgrok.com             REGISTRAR        
@@ -103,7 +105,6 @@ tipjoy.com             REGISTRAR
 verbling.com           REGISTRAR        
 vidyard.com            REGISTRAR        
 wepay.com              REGISTRAR        
-whitenoisenetworks.com REGISTRAR        
 wundrbar.com           REGISTRAR        
 youos.com              REGISTRAR        
 zencoder.com           REGISTRAR        
@@ -114,7 +115,6 @@ cloudant.com           REGISTRAR     SSL
 clustrix.com           REGISTRAR     SSL
 curebit.com            REGISTRAR     SSL
 fathomdb.com           REGISTRAR     SSL
-interstateapp.com      REGISTRAR     SSL
 meetcast.com           REGISTRAR     SSL
 pagerduty.com          REGISTRAR     SSL
 polleverywhere.com     REGISTRAR     SSL
@@ -129,7 +129,6 @@ voxli.com              REGISTRAR     SSL
 anyvite.com            REGISTRAR DNS    
 cardpool.com           REGISTRAR DNS    
 comprehendsystems.com  REGISTRAR DNS    
-debteye.com            REGISTRAR DNS    
 etacts.com             REGISTRAR DNS    
 fivestarscard.com      REGISTRAR DNS    
 gamador.com            REGISTRAR DNS    
