@@ -6,5 +6,20 @@ require 'pp'
 require 'domain-profiler'
 require 'erb'
 
-profile = DomainProfiler.new(ARGV[0])
-puts ERB.new(File.read("view/text")).result
+def help
+  puts <<-help
+Usage:
+  $ ./profile domain.com
+help
+end
+
+if ($stdin.tty? && ARGV.empty?) || ARGV.delete('-h') || ARGV.delete('--help')
+  help
+else
+  profile = nil
+
+  ARGV.each do |domain|
+    profile = DomainProfiler.new(domain)
+    puts ERB.new(File.read("view/text")).result
+  end
+end
