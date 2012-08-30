@@ -1,7 +1,7 @@
 
 class Whois
   def parse(data)
-    @data = data.to_s.split("\n")
+    @data = data.to_s.lines
     # com = verisign
     # net = verisign
     # org = pir
