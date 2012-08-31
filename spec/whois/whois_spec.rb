@@ -36,6 +36,12 @@ describe Whois do
     whois.registrar.should == ['Unknown']
   end
 
+  it "is able to deal with non-ASCII string input" do
+    whois = Whois.new
+    whois.parse("\xEA")
+    whois.registrar.should == ['Unknown']
+  end
+
   it "knows when the domain expires" do
     @zombo.expires.should == '10-oct-2010'
   end
