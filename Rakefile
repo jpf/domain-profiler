@@ -28,7 +28,7 @@ task :dump_main_lists do
   Site = Struct.new(:list, :header, :output)
   [
     Site.new('ycombinator-list-all', 'Y Combinator', 'ycombinator'),
-    Site.new('500startups-list', '500 Startups', '500startups'),
+    Site.new('500startups-list', '500 Startups', '500-startups'),
     Site.new('github-list', 'Github', 'github'),
     Site.new('list/quantcast-top-100', 'Quantcast Top 100', 'quantcast'),
   ].each do |site|
