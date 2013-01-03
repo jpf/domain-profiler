@@ -47,8 +47,13 @@ table thead th {
     border-bottom: 1px solid #3B8686;
 }
 
-div#footer {
-    margin-top: 10px;
+div#note {
+    margin: 10px;
     font-family: Arial;
-    font-size: 0.5em;
+    font-size: 0.6em;
+    color: lightgrey;
+}
+
+div#note a {
+    color: lightgrey;
 }

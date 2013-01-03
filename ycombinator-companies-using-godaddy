@@ -1,0 +1,164 @@
+This is a list of all YCombinator companies that appear to do business with 
+GoDaddy.
+
+In addition to showing which domains were registered through GoDaddy, this list
+also shows domains that use GoDaddy's DNS service or use SSL certificates 
+purchased from GoDaddy.
+
+Since it's easier to stop doing business with GoDaddy if your DNS is hosted
+elsewhere, I've sorted this list according to the relative ease of moving away
+from GoDaddy: The closer a domain is to the top of this list, the easier it
+should be for the owners of that domain to stop doing business with GoDaddy.
+
+---
+
+Corrections to this list are welcome.
+
+I prefer pull-requests on GitHub, you can also contact me on Twitter (@jf).
+
+The code I used to generate this list is here:
+https://github.com/jpf/domain-profiler
+
+
+---
+
+bumptechnologies.com                 SSL
+chirply.com                          SSL
+cloudkick.com                        SSL
+contestmachine.com                   SSL
+dropbox.com                          SSL
+embed.ly                             SSL
+envolve.com                          SSL
+everyme.com                          SSL
+fanchatter.com                       SSL
+freshplum.com                        SSL
+ididwork.com                         SSL
+interstateapp.com                    SSL
+justin.tv                            SSL
+listia.com                           SSL
+meetingmix.com                       SSL
+opez.com                             SSL
+rescuetime.com                       SSL
+tuxebo.com                           SSL
+wufoo.com                            SSL
+debteye.com                      DNS    
+yumdots.com                      DNS    
+addher.com             REGISTRAR        
+adgrok.com             REGISTRAR        
+adioso.com             REGISTRAR        
+adpinion.com           REGISTRAR        
+aerofs.com             REGISTRAR        
+answerly.com           REGISTRAR        
+auctomatic.com         REGISTRAR        
+backtype.com           REGISTRAR        
+chromaom.com           REGISTRAR        
+clickpass.com          REGISTRAR        
+co2stats.com           REGISTRAR        
+convore.com            REGISTRAR        
+datamarketplace.com    REGISTRAR        
+disqus.com             REGISTRAR        
+doublerecall.com       REGISTRAR        
+drchrono.com           REGISTRAR        
+earbits.com            REGISTRAR        
+embedster.com          REGISTRAR        
+flightcaster.com       REGISTRAR        
+gantto.com             REGISTRAR        
+giftrocket.com         REGISTRAR        
+heyzap.com             REGISTRAR        
+hirehive.com           REGISTRAR        
+imoveyou.com           REGISTRAR        
+insoshi.com            REGISTRAR        
+interviewstreet.com    REGISTRAR        
+jobpic.com             REGISTRAR        
+koduco.com             REGISTRAR        
+launchhear.com         REGISTRAR        
+lingt.com              REGISTRAR        
+lockitron.com          REGISTRAR        
+loopt.com              REGISTRAR        
+mailgun.net            REGISTRAR        
+memsql.com             REGISTRAR        
+mobileworks.com        REGISTRAR        
+movity.com             REGISTRAR        
+nambii.com             REGISTRAR        
+nowjs.com              REGISTRAR        
+nowmov.com             REGISTRAR        
+omgpop.com             REGISTRAR        
+optimizely.com         REGISTRAR        
+paperlinks.com         REGISTRAR        
+playturf.net           REGISTRAR        
+pocketfungames.com     REGISTRAR        
+posterous.com          REGISTRAR        
+propable.com           REGISTRAR        
+quartzy.com            REGISTRAR        
+simplenoteapp.com      REGISTRAR        
+slapvid.com            REGISTRAR        
+snaptalent.com         REGISTRAR        
+stypi.com              REGISTRAR        
+swagapalooza.com       REGISTRAR        
+talkbin.com            REGISTRAR        
+tapzilla.com           REGISTRAR        
+teamapart.com          REGISTRAR        
+textpayme.com          REGISTRAR        
+tipjoy.com             REGISTRAR        
+verbling.com           REGISTRAR        
+vidyard.com            REGISTRAR        
+wepay.com              REGISTRAR        
+wundrbar.com           REGISTRAR        
+youos.com              REGISTRAR        
+zencoder.com           REGISTRAR        
+500friends.com         REGISTRAR     SSL
+airbnb.com             REGISTRAR     SSL
+carwoo.com             REGISTRAR     SSL
+cloudant.com           REGISTRAR     SSL
+clustrix.com           REGISTRAR     SSL
+curebit.com            REGISTRAR     SSL
+fathomdb.com           REGISTRAR     SSL
+meetcast.com           REGISTRAR     SSL
+pagerduty.com          REGISTRAR     SSL
+polleverywhere.com     REGISTRAR     SSL
+scribd.com             REGISTRAR     SSL
+songkick.com           REGISTRAR     SSL
+startuply.com          REGISTRAR     SSL
+thesixtyone.com        REGISTRAR     SSL
+virtualmin.com         REGISTRAR     SSL
+voxli.com              REGISTRAR     SSL
+1000memories.com       REGISTRAR DNS    
+140bets.com            REGISTRAR DNS    
+anyvite.com            REGISTRAR DNS    
+cardpool.com           REGISTRAR DNS    
+comprehendsystems.com  REGISTRAR DNS    
+etacts.com             REGISTRAR DNS    
+fivestarscard.com      REGISTRAR DNS    
+gamador.com            REGISTRAR DNS    
+jobspice.com           REGISTRAR DNS    
+kicksend.com           REGISTRAR DNS    
+leftronic.com          REGISTRAR DNS    
+mertado.com            REGISTRAR DNS    
+minomonsters.com       REGISTRAR DNS    
+mixwit.com             REGISTRAR DNS    
+notifo.com             REGISTRAR DNS    
+picurio.com            REGISTRAR DNS    
+popcuts.com            REGISTRAR DNS    
+readyforzero.com       REGISTRAR DNS    
+seeinginteractive.com  REGISTRAR DNS    
+snipd.com              REGISTRAR DNS    
+snipshot.com           REGISTRAR DNS    
+splashup.com           REGISTRAR DNS    
+tagstand.com           REGISTRAR DNS    
+teevox.com             REGISTRAR DNS    
+tweetflow.com          REGISTRAR DNS    
+webmynd.com            REGISTRAR DNS    
+youlicit.com           REGISTRAR DNS    
+zenedy.com             REGISTRAR DNS    
+zerocater.com          REGISTRAR DNS    
+zigfu.com              REGISTRAR DNS    
+aisle50.com            REGISTRAR DNS SSL
+b2brev.com             REGISTRAR DNS SSL
+beetailer.com          REGISTRAR DNS SSL
+buxfer.com             REGISTRAR DNS SSL
+chatterous.com         REGISTRAR DNS SSL
+crocodoc.com           REGISTRAR DNS SSL
+foodoro.com            REGISTRAR DNS SSL
+greplin.com            REGISTRAR DNS SSL
+hellofax.com           REGISTRAR DNS SSL
+yougotlistings.com     REGISTRAR DNS SSL

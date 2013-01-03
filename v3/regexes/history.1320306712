@@ -1,0 +1,500 @@
+   90  cls -al
+   91  ls -al
+   92  cd ..l
+   93  ls -al
+   94  cd ..
+   95  ls -al
+   96  ..
+   97  find pil/
+   98  cd pil/1.1.7/lib/python2.7/site-packages/
+   99  pwd
+  100  pwd | pbcopy
+  101  cd
+  102  cd Projects/printbadge/pil/
+  103  ls -al
+  104  python make-badge.py 
+  105  pushd
+  106  pushd .
+  107  cd /usr/local/Cellar/pil/1.1.7/lib/python2.7/site-packages
+  108  ls -al
+  109  less PIL.pth 
+  110  cd ..
+  111  cd ..
+  112  ls -al
+  113  cd ..
+  114  ls -al
+  115  less README 
+  116  popd
+  117  python make-badge.py 
+  118  python2.7 make-badge.py 
+  119  python2.5 make-badge.py 
+  120  python2.6 make-badge.py 
+  121  echo $PATH
+  122  which python
+  123  cd /usr/local/Cellar/pil/1.1.7/lib/python2.7/site-packages
+  124  cd /usr/local/
+  125  ls -al
+  126  less README.md 
+  127  find . | grep -i pil
+  128  cd Library/Formula/
+  129  less pil.rb 
+  130  brew uninstall pil
+  131  sudo brew uninstall pil
+  132  easy_install pil
+  133  sudo easy_install pil
+  134  cd
+  135  cd Projects/printbadge/pil/
+  136  python make-badge.py 
+  137  clear
+  138  python make-badge.py 
+  139  python make-badge.py 
+  140  python make-badge.py 
+  141  brew search libfreetype
+  142  brew search bfreetype
+  143  brew search freetype
+  144  easy_install help
+  145  sudo easy_install help
+  146  sudo easy_install 
+  147  sudo easy_install uninstall pil
+  148  sudo easy_install --help
+  149  sudo easy_install -m pil
+  150  python make-badge.py 
+  151  pip install http://bashu.narod.ru/Imaging-1.1.7.tar.gz
+  152  brew search pip
+  153  easy_install pip
+  154  sudo easy_install pip
+  155  pip install http://bashu.narod.ru/Imaging-1.1.7.tar.gz
+  156  python make-badge.py 
+  157  cd /tmp
+  158  wget -c http://effbot.org/downloads/Imaging-1.1.7.tar.gz
+  159  curl -O http://effbot.org/downloads/Imaging-1.1.7.tar.gz
+  160  curl -O http://effbot.org/downloads/Imaging-1.1.7.tar.gz
+  161  l s-al
+  162  ls -al
+  163  mkdir pil
+  164  cd pil/
+  165  curl -O http://effbot.org/downloads/Imaging-1.1.7.tar.gz
+  166  curl http://effbot.org/downloads/Imaging-1.1.7.tar.gz > t
+  167  ls -al
+  168  curl -i http://effbot.org/downloads/Imaging-1.1.7.tar.gz
+  169  man curl
+  170  curl -L -i http://effbot.org/downloads/Imaging-1.1.7.tar.gz
+  171  curl -L -O http://effbot.org/downloads/Imaging-1.1.7.tar.gz
+  172  ls -al
+  173  rm t 
+  174  tar xzvf Imaging-1.1.7.tar.gz 
+  175  cd Imaging-1.1.7
+  176  ls -al
+  177  emacsclient 
+  178  emacsclient --help
+  179  emacsclient setup.py 
+  180  emacsclient setup.py 
+  181  aquamacs setup.py 
+  182  sudo python ./setup.py install --prefix=/usr/local
+  183  pushd .
+  184  cd ~/Projects/printbadge/pil/
+  185  python make-badge.py 
+  186  python2.7 make-badge.py 
+  187  python
+  188  python make-badge.py 
+  189  cd usr/local/lib/python2.7/site-packagesn
+  190  cd /usr/local/lib/python2.7/site-packages
+  191  ls -al
+  192  pwd
+  193  cd ~/Projects/printbadge/pil/
+  194  python make-badge.py 
+  195  python
+  196  chmod +x make-badge.py 
+  197  ./make-badge.py 
+  198  ls -al
+  199  open testing.png 
+  200  ./make-badge.py && open testing.png 
+  201  ./make-badge.py && open testing.png 
+  202  python optional-arguments.py 
+  203  python optional-arguments.py 
+  204  python optional-arguments.py 
+  205  python optional-arguments.py 
+  206  ./make-badge.py 
+  207  ./make-badge.py 
+  208  ./make-badge.py 
+  209  ./make-badge.py 
+  210  ./make-badge.py 
+  211  ./make-badge.py 
+  212  ./make-badge.py 
+  213  ./make-badge.py 
+  214  ./make-badge.py 
+  215  ./make-badge.py 
+  216  ./make-badge.py 
+  217  ./make-badge.py 
+  218  ./make-badge.py 
+  219  ./make-badge.py 
+  220  ./make-badge.py 
+  221  ./make-badge.py 
+  222  ./make-badge.py && open testing.png 
+  223  ./make-badge.py && open testing.png 
+  224  ./make-badge.py && open testing.png 
+  225  ./make-badge.py && open testing.png 
+  226  ./make-badge.py && open testing.png 
+  227  ./make-badge.py && open testing.png 
+  228  ./make-badge.py && open testing.png 
+  229  ./make-badge.py && open testing.png 
+  230  ./make-badge.py && open testing.png 
+  231  ./make-badge.py && open testing.png 
+  232  ./make-badge.py && open testing.png 
+  233  ./make-badge.py && open testing.png 
+  234  ./make-badge.py && open testing.png 
+  235  ./make-badge.py && open testing.png 
+  236  ./make-badge.py && open testing.png 
+  237  ./make-badge.py && open testing.png 
+  238  ./make-badge.py && open testing.png 
+  239  ./make-badge.py && open testing.png 
+  240  ./make-badge.py && open testing.png 
+  241  ./make-badge.py && open testing.png 
+  242  ./make-badge.py && open testing.png 
+  243  ./make-badge.py && open testing.png 
+  244  ./make-badge.py && open testing.png 
+  245  ./make-badge.py && open testing.png 
+  246  ./make-badge.py && open testing.png 
+  247  ./make-badge.py && open testing.png 
+  248  ./make-badge.py && open testing.png 
+  249  ./make-badge.py && open testing.png 
+  250  ./make-badge.py && open testing.png 
+  251  ./make-badge.py && open testing.png 
+  252  ./make-badge.py && open testing.png 
+  253  ./make-badge.py && open testing.png 
+  254  ./make-badge.py && open testing.png 
+  255  ./make-badge.py && open testing.png 
+  256  ./make-badge.py && open testing.png 
+  257  ./make-badge.py && open testing.png 
+  258  ./make-badge.py && open testing.png 
+  259  ./make-badge.py && open testing.png 
+  260  ./make-badge.py && open testing.png 
+  261  ./make-badge.py && open testing.png 
+  262  ./make-badge.py && open testing.png 
+  263  ./make-badge.py && open testing.png 
+  264  ./make-badge.py && open testing.png 
+  265  ./make-badge.py && open testing.png 
+  266  ./make-badge.py && open testing.png 
+  267  ./make-badge.py && open testing.png 
+  268  ./make-badge.py && open testing.png 
+  269  ./make-badge.py && open testing.png 
+  270  ./make-badge.py && open testing.png 
+  271  ./make-badge.py && open testing.png 
+  272  ./make-badge.py && open testing.png 
+  273  ./make-badge.py && open testing.png 
+  274  ./make-badge.py && open testing.png 
+  275  ./make-badge.py && open testing.png 
+  276  ./make-badge.py && open testing.png 
+  277  ./make-badge.py && open testing.png 
+  278  ./make-badge.py && open testing.png 
+  279  ./make-badge.py && open testing.png 
+  280  ./make-badge.py && open testing.png 
+  281  ./make-badge.py && open testing.png 
+  282  ./make-badge.py && open testing.png 
+  283  ./make-badge.py && open testing.png 
+  284  ./make-badge.py && open testing.png 
+  285  ./make-badge.py && open testing.png 
+  286  ./make-badge.py && open testing.png 
+  287  ./make-badge.py && open testing.png 
+  288  ./make-badge.py && open testing.png 
+  289  ./make-badge.py && open testing.png 
+  290  ./make-badge.py && open testing.png 
+  291  ./make-badge.py && open testing.png 
+  292  ./make-badge.py && open testing.png 
+  293  ./make-badge.py && open testing.png 
+  294  ./make-badge.py && open testing.png 
+  295  ./make-badge.py && open testing.png 
+  296  ./make-badge.py && open testing.png 
+  297  j
+  298  cd ~/Library/LaunchAgents/
+  299  ls -al
+  300  less com.franusic.tarsnap-daily-backup.plist 
+  301  j
+  302  cd ~/Journal
+  303  ls -al
+  304  date
+  305  ls
+  306  ls -al
+  307  less 2010-07-12 
+  308  clear
+  309  cd
+  310  less .tarsnap/backup.sh
+  311  j
+  312  sudo -i
+  313  j
+  314  cd Journal
+  315  ls -al
+  316  less 2011-0*
+  317  cd /Shared/
+  318  sudo -i
+  319  cd ~/Desktop/
+  320  file videoplayback.htm 
+  321  less videoplayback.htm 
+  322  mv videoplayback.htm Fiona_and_Cake.webm
+  323  open .
+  324  df -h
+  325  iconfig
+  326  ipconfig getpacket en0
+  327  clear
+  328  ipconfig getpacket en0
+  329  ifconfig en0
+  330  ping 10.0.1.1
+  331  ping 4.2.2.2
+  332  sudo -i
+  333  sudo -i
+  334  ssh bob.fihn.net
+  335  ssh bob.fihn.net -P 7122
+  336  ssh bob.fihn.net
+  337  ping bob.fihn.net
+  338  ssh bob.fihn.net
+  339  ssh joel-vm.fihn.net
+  340  ssh bob.fihn.net
+  341  ssh bob.fihn.net -P 7122
+  342  ssh bob.fihn.net -p 7122
+  343  ssh bob.fihn.net -p 7122
+  344  clear
+  345  sudo -i
+  346  sudo -i
+  347  echo "Truth never damages a cause that is just." | md5 
+  348  echo -n "Truth never damages a cause that is just." | md5 
+  349  cd /Users/joel/Dropbox/Projects/Medical\ App 
+  350  less codes.js 
+  351  emacs demo.html 
+  352  ping 4.2.2.2
+  353  ping 4.2.2.2
+  354  sudo -i
+  355  cd /Shared/tm
+  356  cd /Shared/
+  357  ls-al
+  358  ls a-l
+  359  ls -al
+  360  man mds
+  361  man mdls
+  362  man mdutil
+  363  apropos time
+  364  apropos tm
+  365  man tm
+  366  man tmutil
+  367  clear
+  368  sudo -i
+  369  sudo -i
+  370  ping 4.2.2.2
+  371  clear
+  372  cd Dropbox/
+  373  emacs Projects/resume/
+  374  emacs Projects/ring-the-bell
+  375  ping 4.2.2.2
+  376  ping 4.2.2.2
+  377  ping google.com
+  378  pbpaste
+  379  pbpaste; echo
+  380  cd /Shared/.tmp/
+  381  cd /Shared/
+  382  sudo -i
+  383  history
+  384  j
+  385  sudo -i
+  386  sudo -i
+  387  cd /Shared/.tmp/
+  388  ping 4.2.2.2
+  389  dig google.com
+  390  sudo -i
+  391  sudo -i
+  392  j
+  393  tarsnap --list-archives
+  394  pbpaste | sort
+  395  cat ~/.tarsnap/backup.sh
+  396  date +%j
+  397  ping 4.2.2.2
+  398  j
+  399  pbpaste
+  400  pbpaste; echo
+  401  pbpaste; echo
+  402  pbpaste; echo
+  403  cd /Users/joel/Downloads 
+  404  tar -tvf paintings.tar 
+  405  mkdir paintings
+  406  cd paintings
+  407  tar xvf ../paintings.tar 
+  408  ping 4.2.2.2
+  409  ifconfig
+  410  ping 4.2.2.2
+  411  ping 4.2.2.2
+  412  ipconfig getpacket en0
+  413  ipconfig getpacket en0
+  414  ipconfig getpacket en0
+  415  ping 4.2.2.2
+  416  ping 4.2.2.2
+  417  ipconfig getpacket en0
+  418  ipconfig getpacket en0
+  419  ipconfig getpacket en0
+  420  j
+  421  clear
+  422  j
+  423  cd Journal
+  424  ls -al
+  425  less 2009-*
+  426  fg
+  427  less 2011-0*
+  428  fg
+  429  clear
+  430  cd
+  431  clear
+  432  ls -al
+  433  ./Secure/
+  434  open .
+  435  sudo -i
+  436  sudo -i
+  437  j
+  438  j
+  439  pbpaste | pbcopy
+  440  ping 4.2.2.2
+  441  ping 4.2.2.2
+  442  ipconfig getpacket en0
+  443  j
+  444  cd ~/Secure/
+  445  ls -al
+  446  du -h .
+  447  j
+  448  sudo -i
+  449  pbpaste
+  450  pbpaste;echo
+  451  pbpaste;echo
+  452  sudo -i
+  453  j
+  454  ping bing.com
+  455  curl google.com
+  456  curl google.com
+  457  tmutil 
+  458  man tmutil
+  459  tmutil latestbackup
+  460  tmutil compare /Volumes/Time\ Machine\ Backups/Backups.backupdb/ceres/2011-10-12-012633 /Volumes/Time\ Machine\ Backups/Backups.backupdb/ceres/2011-10-16-230844/
+  461  sudo -i
+  462  j
+  463  cd Projects/domain-profiler/v3/
+  464  less *
+  465  grep "Matcher selector:" -A3
+  466  grep "Matcher selector:" -A3 2
+  467  grep "Matcher selector:" -A2 2*
+  468  grep "Matcher selector:" -A2 *
+  469  grep "Matcher selector:" -A2 * | grep code
+  470  ls
+  471  less *
+  472  grep "Matcher" -A2 
+  473  grep "Matcher" -A2 *
+  474  grep "Matcher " -A2 *
+  475  grep "Matcher " -A2 * | less
+  476  curl -iv underthesite.com
+  477  curl -iv underthesite.com | less
+  478  curl -iv github.com | less
+  479  man curl
+  480  curl -iLvv github.com | less
+  481  curl -iLvv github.com | less 2>&1
+  482  curl -iLvv github.com 2>&1 | less
+  483  curl -iLvvv github.com 2>&1 | less
+  484  curl -iLvvvv github.com 2>&1 | less
+  485  curl http://underthesite.com/technologies/midori/matchers/1
+  486  cd Projects
+  487  cd domain-profiler
+  488  mkdir v3
+  489  cd v3/
+  490  wget http://underthesite.com/technologies/midori/matchers/1
+  491  curl -O http://underthesite.com/technologies/midori/matchers/1
+  492  curl -O http://underthesite.com/technologies/midori/matchers/[1-100]
+  493  curl -O http://underthesite.com/technologies/midori/matchers/[100-300]
+  494  j
+  495  exit
+  496  j
+  497  pbpaste 
+  498  pbpaste ; echo
+  499  j
+  500  ssh bob.fihn.net -p 7122
+  501  clear
+  502  cd Projects
+  503  git clone git@github.com:jpf/jsondns.git
+  504  cd json
+  505  cd jsondns/
+  506  ls -al
+  507  git status
+  508  git pull origin master
+  509  ssh -i ~/.ssh/personal_rsa_4096
+  510  ssh -i ~/.ssh/personal_rsa_4096 bob.fihn.net
+  511  ssh -i ~/.ssh/personal_rsa_4096 bob.fihn.net -p 222
+  512  ssh -i ~/.ssh/personal_rsa_4096 bob.fihn.net -p 2222
+  513  ssh -i ~/.ssh/personal_rsa_4096 bob.fihn.net -p 722
+  514  ssh -i ~/.ssh/personal_rsa_4096 bob.fihn.net -p 7122
+  515  ssh-add --help
+  516  ssh-add ~/.ssh/personal_rsa_4096
+  517  git pull origin master
+  518  cat ~/.ssh/personal_rsa_4096
+  519  cat ~/.ssh/personal_rsa_4096.pub 
+  520  cat ~/.ssh/personal_rsa_4096.pub | pbcopy
+  521  git pull origin master
+  522  git log
+  523  cd ../domain-profiler
+  524  git pull origin master
+  525  cd ../jsondns/
+  526  less jsondns.rb 
+  527  git pull origin master
+  528  git tags
+  529  git tag -l
+  530  man git
+  531  git branch -l
+  532  git push heroku master
+  533  cd ../domain-profiler
+  534  ls -al
+  535  git status
+  536  cd v3/
+  537  ../profile boingboing.net
+  538  cd .../
+  539  cd ..
+  540  ./profile boingboing.net
+  541  man curl
+  542  curl -iv boingboing.net | less
+  543  curl -iv boingboing.net 2>&1 | less
+  544  curl -iv github.com 2>&1 | less
+  545  man curl
+  546  curl -iL github.com 2>&1 | less
+  547  man curl
+  548  curl -iL github.com | less
+  549  curl -iLvv github.com | less
+  550  curl -iLvv github.com 2>&1 | less 
+  551  curl -iLvvv github.com 2>&1 | less 
+  552  man curl
+  553  curl -iLvvvs github.com 2>&1 | less 
+  554  curl -iLsv github.com 2>&1 | less 
+  555  curl -iLsv wellsfargo.com 2>&1 | less 
+  556  curl -iLsv fullarmor.com.com 2>&1 | less 
+  557  curl -iLsv fullarmor.com 2>&1 | less 
+  558  curl -iLsv http://www.walkscore.com/ 2>&1 | less 
+  559  curl -iLsv www.walkscore.com 2>&1 | less 
+  560  curl -iLsv walkscore.com 2>&1 | less 
+  561  curl -iLsv lingospot.com 2>&1 | less 
+  562  curl -iLsv gifttag.com 2>&1 | less 
+  563  curl -iLsv socialwok.com 2>&1 | less 
+  564  curl -iLsv lokad.com 2>&1 | less 
+  565  whois 94.245.94.35
+  566  #curl -iLsv lokad.com 2>&1 | less 
+  567  curl -iLsv lokad.com 2>&1 | less 
+  568  curl -iLsv lokad.com 2>&1 | grep Server:
+  569  curl -iLsv pbwiki.com 2>&1 | grep Server:
+  570  curl -iLsv shdh.org 2>&1 | grep Server:
+  571  curl -iLsv shdh.org 2>&1 | less
+  572  curl http://api.crunchbase.com/v/1/search.js?query=pbwiki.com
+  573  curl http://api.crunchbase.com/v/1/search.js?query=pbwiki.com | less
+  574  curl -isv shdh.org
+  575  curl -is shdh.org
+  576* curl -isv
+  577  curl -is shdh.org
+  578  curl -isv shdh.org
+  579  curl -isv www.devhouse.org
+  580  curl -isv www.devhouse.org | grep '^<\ '
+  581  curl -isv www.devhouse.org 2>&1 | grep '^<\ '
+  582  curl -isv www.devhouse.org 2>&1 | grep '^<\ '
+  583  curl -isv www.devhouse.org 1> /dev/null | grep '^<\ '
+  584  curl -isv www.devhouse.org 2> /dev/null | grep '^<\ '
+  585  curl -isv www.devhouse.org 1> /dev/null | grep '^<\ '
+  586  curl -isv www.devhouse.org 2> /dev/null
+  587  curl -isv www.devhouse.org 2> /dev/null | less
+  588  curl -isv www.devhouse.org 1> /dev/null | less
+  589  history > history.`date +%s`

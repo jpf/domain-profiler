@@ -1,7 +1,7 @@
 
 class Whois
   def parse(data)
-    @data = data.to_s.split("\n")
+    @data = data.to_s.lines
     # com = verisign
     # net = verisign
     # org = pir
@@ -9,7 +9,7 @@ class Whois
   end
   def grep(pattern)
     begin
-      @data.grep(pattern).to_s.split(':', 2)[1].strip ||= 'Unknown'
+      @data.grep(pattern).join.split(':', 2)[1].strip ||= 'Unknown'
     rescue
       'Unknown'
     end
@@ -17,7 +17,7 @@ class Whois
   def registrar
     rv = grep(/Registrar:/)
     # cleanup pir and afilias type records
-    rv.sub(/ \([^\)]+\)$/, '').to_a
+    [*rv.sub(/ \([^\)]+\)$/, '')]
   end
   def created
     grep(/Creat.+:/)

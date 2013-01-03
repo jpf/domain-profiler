@@ -38,14 +38,18 @@ file.map {|host|
   host.chomp!
   profile = DomainProfiler.new(host)
 
-  out = {}
-  out[:web_host]   = profile.dns.a.map{|record| orgname(record.answer) }.lookup(host)
-  out[:dns_host]   = profile.dns.ns.map{|record| Name.new.shorten(record.answer) }.lookup(host)
-  out[:mail_host]  = profile.dns.mx.map{|record| Name.new.shorten(record.host) }.lookup(host)
-  out[:registrar]  = profile.whois.registrar.lookup(host)
-  out[:ssl_issuer] = profile.ssl.ca.lookup(host)
-  out[:ssl_type]   = profile.ssl.cn
-  hosts[host] = out
+  begin
+    out = {}
+    out[:web_host]   = profile.dns.a.map{|record| orgname(record.answer) }.lookup(host)
+    out[:dns_host]   = profile.dns.ns.map{|record| Name.new.shorten(record.answer) }.lookup(host)
+    out[:mail_host]  = profile.dns.mx.map{|record| Name.new.shorten(record.host) }.lookup(host)
+    out[:registrar]  = profile.whois.registrar.lookup(host)
+    out[:ssl_issuer] = profile.ssl.ca.lookup(host)
+    out[:ssl_type]   = profile.ssl.cn
+    hosts[host] = out
+  rescue
+  end
+
 }
 
 # Modify this to make stats on hosting provider, dns, mail, whois, ssl, ssn type and count HTML
