@@ -23,7 +23,7 @@ class SSL
   end
   def cn
     return [:none] if @no_data
-    [@data['subject'].match(/CN=([^\/]+)/)[1]]
+    [@data['subject'].match(/CN\s*=\s*([^\/]+)/)[1]]
   end
   def ca
     return [:none] if @no_data
